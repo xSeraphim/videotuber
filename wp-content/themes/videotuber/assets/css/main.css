@@ -1,0 +1,259 @@
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --grey: #85888C;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white);
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+    background-color: var(--black);
+    box-shadow: 1px 1px 5px 0px var(--grey);
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+
+/* Logo */
+.logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 50px;
+    margin-left: 10px;
+
+}
+
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--black);
+    overflow: hidden;
+    
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+
+}
+
+.menu a:hover{
+    background-color: var(--grey);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+
+    .menu li{
+        float: left;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--grey);
+        
+    }
+    
+    .hamb{
+        display: none;
+    }
+
+}
+
+/* Hero section */
+.headline__hero{
+    color: var(--white);
+    margin: auto;
+}
+.page__hero-section{
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 1000px;
+    padding: 40px;
+
+}
+.inner__content{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+/* Featured Videos */
+.page__featured-videos_text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+.page__featured-videos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.page__video-card{
+    padding: 16px;
+    background-color: var(--black);
+}
+.page__video-card img{
+    width: 150px;
+}
+/* Buttons */
+.primary__button{
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: 16px;
+    padding: 16px 32px;
+    background-color: #ff0000;
+    cursor: pointer;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+
+}
+
+
+/* Text sizes */
+.xl {
+    font-size: clamp(2.763rem, calc( 12px + 3.575vw ), 3.738rem);
+    line-height: 1.1;
+    }
+    
+.l {
+    font-size: clamp(2.275rem, calc( 12px + 2.600vw ), 2.925rem);
+    line-height: 1.1;
+    }
+    
+.m {
+    font-size: clamp(1.853rem, calc( 12px + 1.950vw ), 2.438rem);
+    line-height: 1.1;
+    }
+    
+.s {
+    font-size: clamp(1.625rem, calc( 12px + 1.300vw ), 1.950rem);
+    line-height: 1.1;
+    }
+    
+.xs {
+    font-size: clamp(1.495rem, calc( 12px + 0.780vw ), 1.625rem);
+    line-height: 1.1;
+    }
+    
+.xxs {
+    font-size: clamp(1.300rem, calc( 12px + 0.520vw ), 1.463rem);
+    line-height: 1.1;
+    }

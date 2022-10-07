@@ -1,0 +1,19 @@
+videouri youtube
+API youtube -> 
+
+design ca youtube
+meniu asemanator
+light sau dark
+schimbari in design
+2 3 tipuri de header
+2 3 tipuri la carduri
+
+apiu-l de la youtube -> de pe canalul tau
+trebuie completate intr-un field si apoi get la contentul de pe canal
+daca ai multiple playlisturi sa le faca
+sa rulezi in pagina acel playlist
+creezi un clip sa faca un post pus in draft in wordpress si sa primesti un mail
+
+
+
+ 

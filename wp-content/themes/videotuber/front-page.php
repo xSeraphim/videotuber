@@ -57,7 +57,7 @@ if ( ! empty( $videoList['items'] ) ) {
 					<div class="title">
 						<h3><?php echo $vid_title; ?></h3>
 						<a href="https://www.youtube.com/channel/UCQeRaTukNYft1_6AZPACnog/featured"><?php echo $vid_channel_name; ?></a> 
-						<span><?php echo $vid_views; ?> • <?php echo videotuber_get_time_ago( strtotime( $vid_post_date ) ); ?></span>
+						<span><?php echo videotuber_video_views($vid_views); ?> • <?php echo videotuber_get_time_ago( strtotime( $vid_post_date ) ); ?></span>
 					</div>
 				</div>
 

@@ -1,0 +1,572 @@
+[06-Oct-2022 14:39:17 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:39:17 UTC] PHP Stack trace:
+[06-Oct-2022 14:39:17 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:39:17 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:39:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:39:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:39:17 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:39:17 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:39:17 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:39:17 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:39:17 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:39:17 UTC] PHP Stack trace:
+[06-Oct-2022 14:39:17 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:39:17 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:39:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:39:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:39:17 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:39:17 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:39:17 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:39:17 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:39:17 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:39:17 UTC] PHP Stack trace:
+[06-Oct-2022 14:39:17 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:39:17 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:39:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:39:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:39:17 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:39:17 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:39:17 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:39:17 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:39:17 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:39:17 UTC] PHP Stack trace:
+[06-Oct-2022 14:39:17 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:39:17 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:39:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:39:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:39:17 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:39:17 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:39:17 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:39:17 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:41:29 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:41:29 UTC] PHP Stack trace:
+[06-Oct-2022 14:41:29 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:41:29 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:41:29 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:41:29 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:41:29 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:41:29 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:41:29 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:41:29 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:41:29 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:41:29 UTC] PHP Stack trace:
+[06-Oct-2022 14:41:29 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:41:29 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:41:29 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:41:29 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:41:29 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:41:29 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:41:29 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:41:29 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:41:29 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:41:29 UTC] PHP Stack trace:
+[06-Oct-2022 14:41:29 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:41:29 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:41:29 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:41:29 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:41:29 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:41:29 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:41:29 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:41:29 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:41:29 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:41:29 UTC] PHP Stack trace:
+[06-Oct-2022 14:41:29 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:41:29 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:41:29 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:41:29 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:41:29 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:41:29 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:41:29 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:41:29 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:48 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:42:48 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:48 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:48 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:48 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:48 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:48 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:48 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:48 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:48 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:48 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:42:48 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:48 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:48 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:48 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:48 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:48 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:48 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:48 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:48 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:48 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:42:48 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:48 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:48 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:48 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:48 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:48 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:48 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:48 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:48 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:48 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:42:48 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:48 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:48 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:48 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:48 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:48 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:48 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:48 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:48 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:52 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:42:52 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:52 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:52 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:52 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:52 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:52 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:52 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:52 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:52 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:52 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:42:52 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:52 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:52 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:52 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:52 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:52 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:52 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:52 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:52 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:52 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:42:52 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:52 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:52 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:52 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:52 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:52 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:52 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:52 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:52 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:42:52 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:42:52 UTC] PHP Stack trace:
+[06-Oct-2022 14:42:52 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:42:52 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:42:52 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:42:52 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:42:52 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:42:52 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:42:52 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:42:52 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:07 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:43:07 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:07 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:07 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:07 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:07 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:07 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:07 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:07 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:07 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:07 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:43:07 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:07 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:07 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:07 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:07 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:07 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:07 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:07 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:07 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:07 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:43:07 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:07 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:07 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:07 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:07 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:07 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:07 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:07 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:07 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:07 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:43:07 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:07 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:07 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:07 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:07 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:07 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:07 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:07 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:07 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:38 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:43:38 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:38 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:38 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:38 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:38 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:38 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:38 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:38 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:38 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:38 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:43:38 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:38 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:38 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:38 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:38 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:38 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:38 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:38 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:38 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:38 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:43:38 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:38 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:38 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:38 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:38 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:38 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:38 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:38 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:38 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:38 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:43:38 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:38 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:38 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:38 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:38 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:38 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:38 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:38 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:38 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:56 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:43:56 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:56 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:56 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:56 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:56 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:56 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:56 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:56 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:56 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:56 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:43:56 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:56 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:56 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:56 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:56 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:56 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:56 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:56 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:56 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:56 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:43:56 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:56 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:56 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:56 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:56 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:56 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:56 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:56 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:56 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:43:56 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:43:56 UTC] PHP Stack trace:
+[06-Oct-2022 14:43:56 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:43:56 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:43:56 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:43:56 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:43:56 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:43:56 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:43:56 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:43:56 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:44:50 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:44:50 UTC] PHP Stack trace:
+[06-Oct-2022 14:44:50 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:44:50 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:44:50 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:44:50 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:44:50 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:44:50 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:44:50 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:44:50 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:44:50 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:44:50 UTC] PHP Stack trace:
+[06-Oct-2022 14:44:50 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:44:50 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:44:50 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:44:50 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:44:50 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:44:50 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:44:50 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:44:50 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:44:50 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:44:50 UTC] PHP Stack trace:
+[06-Oct-2022 14:44:50 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:44:50 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:44:50 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:44:50 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:44:50 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:44:50 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:44:50 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:44:50 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:44:50 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:44:50 UTC] PHP Stack trace:
+[06-Oct-2022 14:44:50 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:44:50 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:44:50 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:44:50 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:44:50 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:44:50 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:44:50 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:44:50 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:45:32 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:45:32 UTC] PHP Stack trace:
+[06-Oct-2022 14:45:32 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:45:32 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:45:32 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:45:32 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:45:32 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:45:32 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:45:32 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:45:32 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:45:32 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 258
+[06-Oct-2022 14:45:32 UTC] PHP Stack trace:
+[06-Oct-2022 14:45:32 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:45:32 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:45:32 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:45:32 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:45:32 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:45:32 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:45:32 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:45:32 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:45:32 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:45:32 UTC] PHP Stack trace:
+[06-Oct-2022 14:45:32 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:45:32 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:45:32 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:45:32 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:45:32 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:45:32 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:45:32 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:45:32 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:45:32 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 271
+[06-Oct-2022 14:45:32 UTC] PHP Stack trace:
+[06-Oct-2022 14:45:32 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:45:32 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:45:32 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:45:32 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:45:32 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:45:32 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:244
+[06-Oct-2022 14:45:32 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:45:32 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:57:05 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 272
+[06-Oct-2022 14:57:05 UTC] PHP Stack trace:
+[06-Oct-2022 14:57:05 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:57:05 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:57:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:57:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:57:05 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:57:05 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:57:05 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:57:05 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:57:05 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 272
+[06-Oct-2022 14:57:05 UTC] PHP Stack trace:
+[06-Oct-2022 14:57:05 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:57:05 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:57:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:57:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:57:05 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:57:05 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:57:05 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:57:05 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:57:05 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 272
+[06-Oct-2022 14:57:05 UTC] PHP Stack trace:
+[06-Oct-2022 14:57:05 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:57:05 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:57:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:57:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:57:05 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:57:05 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:57:05 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:57:05 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:57:05 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 285
+[06-Oct-2022 14:57:05 UTC] PHP Stack trace:
+[06-Oct-2022 14:57:05 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:57:05 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:57:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:57:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:57:05 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:57:05 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:57:05 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:57:05 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:57:05 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 285
+[06-Oct-2022 14:57:05 UTC] PHP Stack trace:
+[06-Oct-2022 14:57:05 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:57:05 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:57:05 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:57:05 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:57:05 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:57:05 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:57:05 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:57:05 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:58:24 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 272
+[06-Oct-2022 14:58:24 UTC] PHP Stack trace:
+[06-Oct-2022 14:58:24 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:58:24 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:58:24 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:58:24 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:58:24 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:58:24 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:58:24 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:58:24 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:58:24 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 272
+[06-Oct-2022 14:58:24 UTC] PHP Stack trace:
+[06-Oct-2022 14:58:24 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:58:24 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:58:24 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:58:24 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:58:24 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:58:24 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:58:24 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:58:24 UTC] PHP   8. api_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:58:24 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 285
+[06-Oct-2022 14:58:24 UTC] PHP Stack trace:
+[06-Oct-2022 14:58:24 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:58:24 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:58:24 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:58:24 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:58:24 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:58:24 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:58:24 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:58:24 UTC] PHP   8. api_field_callback2() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:58:24 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 298
+[06-Oct-2022 14:58:24 UTC] PHP Stack trace:
+[06-Oct-2022 14:58:24 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:58:24 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:58:24 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:58:24 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:58:24 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:58:24 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:58:24 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:58:24 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 14:58:24 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 298
+[06-Oct-2022 14:58:24 UTC] PHP Stack trace:
+[06-Oct-2022 14:58:24 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:0
+[06-Oct-2022 14:58:24 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\admin.php:259
+[06-Oct-2022 14:58:24 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[06-Oct-2022 14:58:24 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[06-Oct-2022 14:58:24 UTC] PHP   5. wpr_api_page_html() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[06-Oct-2022 14:58:24 UTC] PHP   6. do_settings_sections() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:258
+[06-Oct-2022 14:58:24 UTC] PHP   7. do_settings_fields() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1707
+[06-Oct-2022 14:58:24 UTC] PHP   8. product_field_callback() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\template.php:1749
+[06-Oct-2022 15:09:52 UTC] PHP Notice:  Undefined variable: videotuber_api_keyer in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 132
+[06-Oct-2022 15:09:52 UTC] PHP Stack trace:
+[06-Oct-2022 15:09:52 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[06-Oct-2022 15:09:52 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[06-Oct-2022 15:09:52 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[06-Oct-2022 15:09:52 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[06-Oct-2022 15:09:52 UTC] PHP   5. videotuber_construct_url() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php:20
+[06-Oct-2022 15:10:24 UTC] PHP Notice:  Undefined variable: videotuber_api_keyer in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 132
+[06-Oct-2022 15:10:24 UTC] PHP Stack trace:
+[06-Oct-2022 15:10:24 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[06-Oct-2022 15:10:24 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[06-Oct-2022 15:10:24 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[06-Oct-2022 15:10:24 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[06-Oct-2022 15:10:24 UTC] PHP   5. videotuber_construct_url() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php:20
+[06-Oct-2022 15:11:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gt_get_post_view() in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:57
+Stack trace:
+#0 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php(309): videotuber_posts_custom_column_views('post_views')
+#1 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-posts-list-table.php(1331): do_action('manage_posts_cu...', 'post_views', 22)
+#4 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-list-table.php(1450): WP_Posts_List_Table->column_default(Object(WP_Post), 'post_views')
+#5 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-posts-list-table.php(1383): WP_List_Table->single_row_co in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 57
+[06-Oct-2022 15:11:02 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 371
+[06-Oct-2022 15:11:02 UTC] PHP Stack trace:
+[06-Oct-2022 15:11:02 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-fatal-error-handler.php:0
+[06-Oct-2022 15:11:02 UTC] PHP   2. WP_Recovery_Mode->handle_error() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-fatal-error-handler.php:52
+[06-Oct-2022 15:11:02 UTC] PHP   3. WP_Recovery_Mode_Email_Service->maybe_send_recovery_mode_email() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode.php:184
+[06-Oct-2022 15:11:02 UTC] PHP   4. WP_Recovery_Mode_Email_Service->send_recovery_mode_email() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode-email-service.php:61
+[06-Oct-2022 15:11:02 UTC] PHP   5. WP_Recovery_Mode_Email_Service->get_debug() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode-email-service.php:154
+[06-Oct-2022 15:11:02 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 372
+[06-Oct-2022 15:11:02 UTC] PHP Stack trace:
+[06-Oct-2022 15:11:02 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-fatal-error-handler.php:0
+[06-Oct-2022 15:11:02 UTC] PHP   2. WP_Recovery_Mode->handle_error() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-fatal-error-handler.php:52
+[06-Oct-2022 15:11:02 UTC] PHP   3. WP_Recovery_Mode_Email_Service->maybe_send_recovery_mode_email() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode.php:184
+[06-Oct-2022 15:11:02 UTC] PHP   4. WP_Recovery_Mode_Email_Service->send_recovery_mode_email() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode-email-service.php:61
+[06-Oct-2022 15:11:02 UTC] PHP   5. WP_Recovery_Mode_Email_Service->get_debug() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-recovery-mode-email-service.php:154
+[06-Oct-2022 15:11:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gt_get_post_view() in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:57
+Stack trace:
+#0 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php(309): videotuber_posts_custom_column_views('post_views')
+#1 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-posts-list-table.php(1331): do_action('manage_posts_cu...', 'post_views', 22)
+#4 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-list-table.php(1450): WP_Posts_List_Table->column_default(Object(WP_Post), 'post_views')
+#5 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-posts-list-table.php(1383): WP_List_Table->single_row_co in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 57
+[06-Oct-2022 15:11:12 UTC] PHP Notice:  Undefined variable: videotuber_api_keyer in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 132
+[06-Oct-2022 15:11:12 UTC] PHP Stack trace:
+[06-Oct-2022 15:11:12 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[06-Oct-2022 15:11:12 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[06-Oct-2022 15:11:12 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[06-Oct-2022 15:11:12 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[06-Oct-2022 15:11:12 UTC] PHP   5. videotuber_construct_url() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\single.php:3
+[06-Oct-2022 15:20:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CallAPI() in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\single.php:5
+Stack trace:
+#0 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Starli...')
+#2 C:\Users\Starlink\Local Sites\videotuber\app\public\index.php(17): require('C:\\Users\\Starli...')
+#3 {main}
+  thrown in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\single.php on line 5
+[06-Oct-2022 15:21:05 UTC] PHP Warning:  Use of undefined constant file_get_contents - assumed 'file_get_contents' (this will throw an Error in a future version of PHP) in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 102
+[06-Oct-2022 15:21:05 UTC] PHP Stack trace:
+[06-Oct-2022 15:21:05 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[06-Oct-2022 15:21:05 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[06-Oct-2022 15:21:05 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[06-Oct-2022 15:21:05 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[06-Oct-2022 15:21:05 UTC] PHP   5. videotuber_call_api() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\single.php:5
+[07-Oct-2022 02:32:47 UTC] PHP Notice:  Undefined variable: Channel_ID in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php on line 19
+[07-Oct-2022 02:32:47 UTC] PHP Stack trace:
+[07-Oct-2022 02:32:47 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[07-Oct-2022 02:32:47 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[07-Oct-2022 02:32:47 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[07-Oct-2022 02:32:47 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[07-Oct-2022 02:32:47 UTC] PHP Notice:  Undefined variable: Max_Results in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php on line 19
+[07-Oct-2022 02:32:47 UTC] PHP Stack trace:
+[07-Oct-2022 02:32:47 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[07-Oct-2022 02:32:47 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[07-Oct-2022 02:32:47 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[07-Oct-2022 02:32:47 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[07-Oct-2022 02:32:47 UTC] PHP Notice:  Undefined variable: API_Key in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php on line 19
+[07-Oct-2022 02:32:47 UTC] PHP Stack trace:
+[07-Oct-2022 02:32:47 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[07-Oct-2022 02:32:47 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[07-Oct-2022 02:32:47 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[07-Oct-2022 02:32:47 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[07-Oct-2022 02:32:47 UTC] PHP Warning:  file_get_contents(https://www.googleapis.com/youtube/v3/search?order=date&amp;part=snippet&amp;channelId=&amp;maxResults=&amp;key=): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+ in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php on line 19
+[07-Oct-2022 02:32:47 UTC] PHP Stack trace:
+[07-Oct-2022 02:32:47 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[07-Oct-2022 02:32:47 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[07-Oct-2022 02:32:47 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[07-Oct-2022 02:32:47 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[07-Oct-2022 02:32:47 UTC] PHP   5. file_get_contents() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php:19
+[07-Oct-2022 02:32:47 UTC] PHP Notice:  Undefined variable: apiError in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php on line 66
+[07-Oct-2022 02:32:47 UTC] PHP Stack trace:
+[07-Oct-2022 02:32:47 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:0
+[07-Oct-2022 02:32:47 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
+[07-Oct-2022 02:32:47 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
+[07-Oct-2022 02:32:47 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[07-Oct-2022 06:58:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gt_get_post_view() in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php:57
+Stack trace:
+#0 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php(309): videotuber_posts_custom_column_views('post_views')
+#1 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-posts-list-table.php(1331): do_action('manage_posts_cu...', 'post_views', 22)
+#4 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-list-table.php(1450): WP_Posts_List_Table->column_default(Object(WP_Post), 'post_views')
+#5 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\includes\class-wp-posts-list-table.php(1383): WP_List_Table->single_row_co in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\lib\helpers.php on line 57
+[07-Oct-2022 11:09:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CallAPI() in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php:17
+Stack trace:
+#0 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Starli...')
+#2 C:\Users\Starlink\Local Sites\videotuber\app\public\index.php(17): require('C:\\Users\\Starli...')
+#3 {main}
+  thrown in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-content\themes\videotuber\front-page.php on line 17

@@ -1,34 +1,34 @@
 <?php
 
-// API config 
-$API_Key    = 'AIzaSyBcm4jEG5zu4pPJYH7ARgxD2FLF9D8q4Bc'; 
-$Channel_ID = 'UCG4lyXSlTsKq6OY80voKgVw'; 
-$Max_Results = 4; 
- 
-// Get videos from channel by YouTube Data API 
-$apiData = file_get_contents('https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId='.$Channel_ID.'&maxResults='.$Max_Results.'&key='.$API_Key.''); 
-if($apiData){ 
-    $videoList = json_decode($apiData); 
-}else{ 
-    echo 'Invalid API key or channel ID.'; 
+// API config
+$API_Key     = 'AIzaSyBcm4jEG5zu4pPJYH7ARgxD2FLF9D8q4Bc';
+$Channel_ID  = 'UCG4lyXSlTsKq6OY80voKgVw';
+$Max_Results = 4;
+
+// Get videos from channel by YouTube Data API
+$apiData = file_get_contents( 'https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=' . $Channel_ID . '&maxResults=' . $Max_Results . '&key=' . $API_Key . '' );
+if ( $apiData ) {
+	$videoList = json_decode( $apiData );
+} else {
+	echo 'Invalid API key or channel ID.';
 }
-var_dump($apiData);
+var_dump( $apiData );
 
-if(!empty($videoList->items)){ 
-  foreach($videoList->items as $item){ 
-    // Embed video 
-      if(isset($item->id->videoId)){ 
-        $url = "https://www.googleapis.com/youtube/v3/videos?id=" . $item->id->videoId . "&key=" . $API_Key . "&part=snippet,contentDetails,statistics,status";
-      
-        $json = file_get_contents($url);
-        $getData = json_decode( $json , true);
-        foreach((array)$getData['items'] as $key => $gDat){
-            $title = $gDat['snippet']['title'];
+if ( ! empty( $videoList->items ) ) {
+	foreach ( $videoList->items as $item ) {
+		// Embed video
+		if ( isset( $item->id->videoId ) ) {
+			$url = 'https://www.googleapis.com/youtube/v3/videos?id=' . $item->id->videoId . '&key=' . $API_Key . '&part=snippet,contentDetails,statistics,status';
 
-        }
-        // Output title
-       
-          echo ' 
+			$json    = file_get_contents( $url );
+			$getData = json_decode( $json, true );
+			foreach ( (array) $getData['items'] as $key => $gDat ) {
+				$title = $gDat['snippet']['title'];
+
+			}
+			// Output title
+
+			echo ' 
           <div style="width: 100%; max-width: 550px; box-shadow: 6px 6px 10px hsl(206.5, 0%, 75%); margin: 2rem;">
     <div style="position: relative; padding-bottom: 56.15%; height: 0; overflow: hidden;">
       <iframe 
@@ -75,9 +75,9 @@ if(!empty($videoList->items)){
         allowfullscreen>
       </iframe>
     </div>
-  </div>'; 
-      } 
-  } 
-}else{ 
-  echo '<p class="error">'.$apiError.'</p>'; 
+  </div>';
+		}
+	}
+} else {
+	echo '<p class="error">' . $apiError . '</p>';
 }

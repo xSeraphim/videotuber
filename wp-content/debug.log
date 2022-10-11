@@ -94,3 +94,31 @@
 [11-Oct-2022 16:39:57 UTC] PHP   2. require() C:\Users\Starlink\Local Sites\videotuber\app\public\index.php:17
 [11-Oct-2022 16:39:57 UTC] PHP   3. require_once() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-blog-header.php:19
 [11-Oct-2022 16:39:57 UTC] PHP   4. include() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\template-loader.php:106
+[11-Oct-2022 19:23:21 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-customize-widgets.php on line 899
+[11-Oct-2022 19:23:21 UTC] PHP Stack trace:
+[11-Oct-2022 19:23:21 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:0
+[11-Oct-2022 19:23:21 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:292
+[11-Oct-2022 19:23:21 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[11-Oct-2022 19:23:21 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[11-Oct-2022 19:23:21 UTC] PHP   5. WP_Customize_Widgets->output_widget_control_templates() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[11-Oct-2022 19:26:06 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-customize-widgets.php on line 899
+[11-Oct-2022 19:26:06 UTC] PHP Stack trace:
+[11-Oct-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:0
+[11-Oct-2022 19:26:06 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:292
+[11-Oct-2022 19:26:06 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[11-Oct-2022 19:26:06 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[11-Oct-2022 19:26:06 UTC] PHP   5. WP_Customize_Widgets->output_widget_control_templates() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[11-Oct-2022 19:27:16 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-customize-widgets.php on line 899
+[11-Oct-2022 19:27:16 UTC] PHP Stack trace:
+[11-Oct-2022 19:27:16 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:0
+[11-Oct-2022 19:27:16 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:292
+[11-Oct-2022 19:27:16 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[11-Oct-2022 19:27:16 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[11-Oct-2022 19:27:16 UTC] PHP   5. WP_Customize_Widgets->output_widget_control_templates() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[11-Oct-2022 19:28:28 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-customize-widgets.php on line 899
+[11-Oct-2022 19:28:28 UTC] PHP Stack trace:
+[11-Oct-2022 19:28:28 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:0
+[11-Oct-2022 19:28:28 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:292
+[11-Oct-2022 19:28:28 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[11-Oct-2022 19:28:28 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[11-Oct-2022 19:28:28 UTC] PHP   5. WP_Customize_Widgets->output_widget_control_templates() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307

@@ -22,10 +22,10 @@
 		</header> -->
 		<div class="header">
 	  <div class="header__left">
-	  <img
-		  src="https://cdn.cdnlogo.com/logos/y/92/youtube.svg"
-		  alt=""
-		/>
+		<?php if ( function_exists( 'the_custom_logo' ) ) { 
+				the_custom_logo();
+				}
+	?>
 	  <div class="header__icons">
 		<i class="material-icons display-this">search</i>
 		<i class="material-icons">videocam</i>

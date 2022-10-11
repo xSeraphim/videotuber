@@ -12,6 +12,9 @@ define( 'WPR_VIDEOTUBER_PATH', get_stylesheet_directory_uri() );
 function videtuber_add_styles() {
 	wp_enqueue_style( 'videotuber_main_styles', get_theme_file_uri( '/assets/css/main.css' ) );
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
+	wp_enqueue_script('swiper-script-js', get_theme_file_uri('/modules/swiper-js/swiper-bundle.min.js'), array('jquery'), '1.0', true);
+	wp_enqueue_script('main-js', get_theme_file_uri('/assets/js/main.js'), array('jquery'), '1.0', true);
+	wp_enqueue_style( 'swiper_js_main_styles', get_theme_file_uri( '/modules/swiper-js/swiper-bundle.min.css' ) );
 
 }
 add_action( 'wp_enqueue_scripts', 'videtuber_add_styles' );
@@ -22,15 +25,3 @@ function videotuber_features() {
 }
 add_action( 'after_setup_theme', 'videotuber_features' );
 add_theme_support( 'post-thumbnails' );
-
-
-
-/*
-add_action('init', function(){
-	$get_data = callAPI( 'GET', 'https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCG4lyXSlTsKq6OY80voKgVw&maxResults=4&key=AIzaSyBcm4jEG5zu4pPJYH7ARgxD2FLF9D8q4Bc');
-	$json = json_decode( $get_data, true );
-	var_dump($json);
-
-});
-
-*/

@@ -1,11 +1,28 @@
 <?php get_header();
 ?>
 
-<div class="page__hero-section" style="background-image: url(<?php echo get_theme_file_uri( '/assets/images/videotuber-hero_main.jpg' ); ?>);">
-	<div class="inner__content">
-		<h1 class="headline__hero xl">Welcome to VideoTuber</h1>
-		<a class="primary__button m">Check it OUT</a>
+<!-- Slider main container -->
+<div class="swiper" id="js-main-slider">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/astronaut_ring_neon_156673_1920x1080.jpg);" class="swiper-slide">
+		<h2 class="xl">Hey, this is Asmongold</h2>
+		<p class="m">Welcome to my website</p>
 	</div>
+    <div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_acorn_art_129982_1920x1080.jpg);" class="swiper-slide"></div>
+    <div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_cave_light_art_94937_1920x1080.jpg);" class="swiper-slide"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
 </div>
 
 <div class="page__featured-videos_text">
@@ -17,6 +34,7 @@
 $videoList               = videotuber_call_api();
 $videotuber_api_settings = get_option( 'wpr_option' );
 $videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
+$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 
 
 ?>
@@ -56,8 +74,8 @@ if ( ! empty( $videoList['items'] ) ) {
 					</div>
 					<div class="title">
 						<h3><?php echo $vid_title; ?></h3>
-						<a href="https://www.youtube.com/channel/UCQeRaTukNYft1_6AZPACnog/featured"><?php echo $vid_channel_name; ?></a> 
-						<span><?php echo videotuber_video_views($vid_views); ?> • <?php echo videotuber_get_time_ago( strtotime( $vid_post_date ) ); ?></span>
+						<a href=<?php echo "https://www.youtube.com/channel/$videotuber_channel_id"; ?>><?php echo $vid_channel_name; ?></a> 
+						<span><?php echo videotuber_video_views( $vid_views ) . ' views'; ?> • <?php echo videotuber_get_time_ago( strtotime( $vid_post_date ) ); ?></span>
 					</div>
 				</div>
 

@@ -310,3 +310,29 @@ ul{
 	font-size: clamp(1.300rem, calc( 12px + 0.520vw ), 1.463rem);
 	line-height: 1.1;
 	}
+
+/* swiper */
+.swiper {
+		width: 100%;
+		height: 1080px;
+}
+.swiper-slide{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.swiper-slide h2{
+	color:white;
+}
+.swiper-slide p{
+	color:white;
+}
+#js-main-slider .swiper-pagination-bullet{
+	background-color: white;
+	width: 20px;
+	height: 20px;
+}
+.swiper-button-next, .swiper-button-prev{
+	color:white !important;
+}

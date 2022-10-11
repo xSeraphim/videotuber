@@ -99,6 +99,8 @@ function videotuber_call_api() {
 	return json_decode( wp_remote_retrieve_body( $response ), true );
 }
 
+
+
 function api_fields_callback( $args ) {
 	?>
 	<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Edit Youtube API SETTINGS.', 'wpr' ); ?></p>
@@ -281,20 +283,23 @@ function product_field_callback( $args ) {
 }
 
 
-function videotuber_video_views($n, $decimals = 2, $suffix = '') {
-    if(!$suffix)
-        $suffix = 'K,M,B';
-    $suffix = explode(',', $suffix);
+function videotuber_video_views( $n, $decimals = 2, $suffix = '' ) {
+	if ( ! $suffix ) {
+		$suffix = 'K,M,B';
+	}
+	$suffix = explode( ',', $suffix );
 
-    if ($n < 1000) { // any number less than a Thousand
-        $shorted = number_format($n);
-    } elseif ($n < 1000000) { // any number less than a million
-        $shorted = number_format($n/1000, $decimals).$suffix[0];
-    } elseif ($n < 1000000000) { // any number less than a billion
-        $shorted = number_format($n/1000000, $decimals).$suffix[1];
-    } else { // at least a billion
-        $shorted = number_format($n/1000000000, $decimals).$suffix[2];
-    }
+	if ( $n < 1000 ) { // any number less than a Thousand
+		$shorted = number_format( $n );
+	} elseif ( $n < 1000000 ) { // any number less than a million
+		$shorted = number_format( $n / 1000, $decimals ) . $suffix[0];
+	} elseif ( $n < 1000000000 ) { // any number less than a billion
+		$shorted = number_format( $n / 1000000, $decimals ) . $suffix[1];
+	} else { // at least a billion
+		$shorted = number_format( $n / 1000000000, $decimals ) . $suffix[2];
+	}
 
-    return $shorted;
+	return $shorted;
 }
+
+

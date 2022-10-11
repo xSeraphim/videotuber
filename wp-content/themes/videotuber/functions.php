@@ -21,8 +21,13 @@ add_action( 'wp_enqueue_scripts', 'videtuber_add_styles' );
 
 function videotuber_features() {
 	add_theme_support( 'title-tag' );
+	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'custom-logo' );
 	register_nav_menu( 'headerMenuLocation', 'Header Main Menu Navigation' );
+	register_nav_menu( 'foooterMiddleLocation1', 'Footer Middle Menu Navigation 1' );
+	register_nav_menu( 'foooterMiddleLocation2', 'Footer Middle Menu Navigation 2' );
+	register_nav_menu( 'foooterMiddleLocation3', 'Footer Middle Menu Navigation 3' );
+	register_nav_menu( 'foooterBottomLocation', 'Bottom Footer Menu Navigation' );
 }
 add_action( 'after_setup_theme', 'videotuber_features' );
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'custom-logo' );
+

@@ -1,0 +1,59 @@
+.padding_xs{
+    padding: 4px;
+}
+.padding_s{
+    padding: 8px;
+}
+.padding_m{
+    padding: 12px;
+}
+.padding_l{
+    padding: 16px;
+}
+.padding_xl{
+    padding: 20px;
+}
+.padding_xs{
+    padding: 4px;
+}
+.padding_s{
+    padding: 8px;
+}
+.padding_m{
+    padding: 12px;
+}
+.padding_l{
+    padding: 16px;
+}
+.padding_xl{
+    padding: 20px;
+}
+.font-size-sm{
+    font-size:clamp(0.8rem, 0.19vw + 0.75rem, 0.98rem);
+}
+.font-size-base{
+    font-size:clamp(1rem, 0.33vw + 0.92rem, 1.31rem);
+}
+.font-size-md{
+    font-size:clamp(1.25rem, 0.53vw + 1.12rem, 1.75rem);
+}
+.font-size-lg{
+    font-size:clamp(1.56rem, 0.81vw + 1.36rem, 2.33rem);
+}
+.font-size-xl{
+    font-size:clamp(1.95rem, 1.22vw + 1.65rem, 3.11rem);
+}
+.font-size-xxl{
+    font-size:clamp(2.44rem, 1.79vw + 1.99rem, 4.14rem);
+}
+.font-size-xxxl{
+    font-size:clamp(3.05rem, 2.6vw + 2.4rem, 5.52rem);
+}
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

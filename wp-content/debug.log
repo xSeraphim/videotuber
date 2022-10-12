@@ -1,0 +1,14 @@
+[12-Oct-2022 07:13:17 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-customize-widgets.php on line 899
+[12-Oct-2022 07:13:17 UTC] PHP Stack trace:
+[12-Oct-2022 07:13:17 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:0
+[12-Oct-2022 07:13:17 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:292
+[12-Oct-2022 07:13:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[12-Oct-2022 07:13:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[12-Oct-2022 07:13:17 UTC] PHP   5. WP_Customize_Widgets->output_widget_control_templates() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307
+[12-Oct-2022 07:34:48 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-customize-widgets.php on line 899
+[12-Oct-2022 07:34:48 UTC] PHP Stack trace:
+[12-Oct-2022 07:34:48 UTC] PHP   1. {main}() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:0
+[12-Oct-2022 07:34:48 UTC] PHP   2. do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-admin\customize.php:292
+[12-Oct-2022 07:34:48 UTC] PHP   3. WP_Hook->do_action() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\plugin.php:476
+[12-Oct-2022 07:34:48 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:331
+[12-Oct-2022 07:34:48 UTC] PHP   5. WP_Customize_Widgets->output_widget_control_templates() C:\Users\Starlink\Local Sites\videotuber\app\public\wp-includes\class-wp-hook.php:307

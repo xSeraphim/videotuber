@@ -1,0 +1,58 @@
+/* Videotuber Header */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	padding: 15px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 9;
+  width: 100%;
+
+    i {
+        padding: 0 7px;
+        cursor: pointer;
+      }
+
+    .header__left {
+        display: flex;
+        align-items: center;
+
+        .header__left img {
+            width: 100px;
+            margin-left: 0.5rem; /* Changed */
+          }
+      }
+
+      .header__right {
+        display: flex;
+        align-items: end;
+      }
+
+      .header__search form {
+        border: 1px solid #ddd;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .header__search input {
+        width: 500px;
+        padding: 10px;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        height: 100%;
+      }
+    
+      .header__search button {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        border: none;
+        border-radius: 0;
+      }
+  }

@@ -306,7 +306,7 @@ function videotuber_theme_options ( $wp_customize ){
 	$wp_customize->add_section( 
 		'videotuber_footer_options', 
 		array(
-			'title'       => __( 'Footer Settings', 'videotuber' ),
+			'title'       => __( 'VideoTuber Footer Settings', 'videotuber' ),
 			'priority'    => 100,
 			'capability'  => 'edit_theme_options',
 			'description' => __('Change footer options here.', 'videotuber'), 

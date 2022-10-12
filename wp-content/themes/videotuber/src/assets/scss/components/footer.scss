@@ -1,0 +1,64 @@
+/* Videotuber Footer */
+#footer{
+	background-color: var(--footer) !important;
+	height: auto;
+	padding: 40px;
+
+    .videotuber-socials{
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        width: 100%;
+        border-bottom: 1px solid #0000001a;
+
+        h3{
+            margin-right: 32px;
+        }
+
+        .videotuber-social-link img{
+            width: 32px;
+            margin-right: 32px;
+        }
+
+    }
+
+    .videotuber-middle-footer{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        width: 100%;
+
+        li a{
+            color: var(--black);
+        }
+    }
+
+    .videotuber-bottom-footer{
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        width: 100%;
+        border-top: 1px solid #0000001a;
+
+        .custom-logo-link{
+            margin-right: 32px;
+        }
+    }
+
+    #menu-bottom-footer-navigation{
+        display: flex;
+
+        li{
+            margin-right: 32px;
+
+            a{
+                color: var(--black);
+            }
+        }
+    }
+   
+}

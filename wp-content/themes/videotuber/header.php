@@ -6,20 +6,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<!-- <header class="header">
-			<a href="<?// php echo site_url(); ?>" class="logo">VIDEOTUBER</a>
-			<input class="side-menu" type="checkbox" id="side-menu"/>
-			<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-			<nav class="nav">
-				<ul class="menu">
-				<? // php 
-			  //wp_nav_menu(array(
-				//'theme_location' => 'headerMenuLocation',
-			 // ));
-			?>
-				</ul>
-			</nav>
-		</header> -->
 		<div class="header">
 	  <div class="header__left">
 		<?php if ( function_exists( 'the_custom_logo' ) ) { 
@@ -45,10 +31,7 @@
 	  <div class="header__right">
 		<i class="material-icons display-this">account_circle</i>
 		<i id="menu" class="material-icons">menu</i>
-		<img
-		  src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube-logo-full_color_light.svg?cache=72a5d9c"
-		  alt=""
-		/>
+
 	  </div>
 	   
 	</div>

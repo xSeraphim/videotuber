@@ -58,15 +58,18 @@ if ( ! empty( $videoList['items'] ) ) {
 			$video = json_decode( wp_remote_retrieve_body( $json ), true );
 			// var_dump($video['items']);
 			$vid_id           = 'https://www.youtube.com/embed/' . $item['id']['videoId'];
+			$vid_thumb		  = 'https://img.youtube.com/vi/' . $item['id']['videoId'] . '/mqdefault.jpg';
 			$vid_title        = $video['items'][0]['snippet']['title'];
 			$vid_channel_name = $video['items'][0]['snippet']['channelTitle'];
 			$vid_post_date    = $video['items'][0]['snippet']['publishedAt'];
-			$vid_views        = $video['items'][0]['statistics']['viewCount']
+			$vid_views        = $video['items'][0]['statistics']['viewCount'];
 			?>
 		<div class="video">
 				<div class="video__thumbnail">
-					<iframe width="310" height="170" src="<?php echo $vid_id; ?>" frameborder="0" allowfullscreen loading="lazy";></iframe>
-				
+					<iframe class="lazy" width="310" height="170"  data-src="<?php echo $vid_id; ?>" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen ;></iframe>
+					
 				</div>
 				<div class="video__details">
 					<div class="author">

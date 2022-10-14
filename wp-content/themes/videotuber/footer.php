@@ -3,20 +3,20 @@
 <div id="footer" class="footer">
 	<div class="videotuber-socials">
 		<h3>Follow me on:</h3>
-		<a class="videotuber-social-link" href="https://twitter.com/YouTube" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/assets/icons/facebook.svg>' ?>
+		<a class="videotuber-social-link" href="<?php echo get_theme_mod('facebook_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
+		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/facebook.svg>' ?>
 		</a>
-		<a class="videotuber-social-link" href="https://twitter.com/YouTube" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/assets/icons/instagram.svg>' ?>
+		<a class="videotuber-social-link" href="<?php echo get_theme_mod('instagram_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
+		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/instagram.svg>' ?>
 		</a>
-		<a class="videotuber-social-link" href="https://twitter.com/YouTube" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/assets/icons/tiktok.svg>' ?>
+		<a class="videotuber-social-link" href="<?php echo get_theme_mod('tiktok_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
+		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/tiktok.svg>' ?>
 		</a>
-		<a class="videotuber-social-link" href="https://twitter.com/YouTube" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/assets/icons/twitter.svg>' ?>
+		<a class="videotuber-social-link" href="<?php echo get_theme_mod('twitter_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
+		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/twitter.svg>' ?>
 		</a>
-		<a class="videotuber-social-link" href="https://twitter.com/YouTube" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/assets/icons/youtube.svg>' ?>
+		<a class="videotuber-social-link" href="<?php echo get_theme_mod('youtube_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
+		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/youtube.svg>' ?>
 		</a>
 	</div>
 	<div class="videotuber-middle-footer">

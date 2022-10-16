@@ -5,14 +5,14 @@
 <div class="swiper" id="js-main-slider">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/astronaut_ring_neon_156673_1920x1080.jpg);" class="swiper-slide">
+	<!-- Slides -->
+	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/astronaut_ring_neon_156673_1920x1080.jpg);" class="swiper-slide">
 		<h2 class="xl">Hey, this is Asmongold</h2>
 		<p class="m">Welcome to my website</p>
 	</div>
-    <div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_acorn_art_129982_1920x1080.jpg);" class="swiper-slide"></div>
-    <div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_cave_light_art_94937_1920x1080.jpg);" class="swiper-slide"></div>
-    ...
+	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_acorn_art_129982_1920x1080.jpg);" class="swiper-slide"></div>
+	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_cave_light_art_94937_1920x1080.jpg);" class="swiper-slide"></div>
+	...
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -58,7 +58,7 @@ if ( ! empty( $videoList['items'] ) ) {
 			$video = json_decode( wp_remote_retrieve_body( $json ), true );
 			// var_dump($video['items']);
 			$vid_id           = 'https://www.youtube.com/embed/' . $item['id']['videoId'];
-			$vid_thumb		  = 'https://img.youtube.com/vi/' . $item['id']['videoId'] . '/mqdefault.jpg';
+			$vid_thumb        = 'https://img.youtube.com/vi/' . $item['id']['videoId'] . '/mqdefault.jpg';
 			$vid_title        = $video['items'][0]['snippet']['title'];
 			$vid_channel_name = $video['items'][0]['snippet']['channelTitle'];
 			$vid_post_date    = $video['items'][0]['snippet']['publishedAt'];
@@ -67,8 +67,8 @@ if ( ! empty( $videoList['items'] ) ) {
 		<div class="video">
 				<div class="video__thumbnail">
 					<iframe class="lazy" width="310" height="170"  data-src="<?php echo $vid_id; ?>" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen ;></iframe>
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen ;></iframe>
 					
 				</div>
 				<div class="video__details">
@@ -83,7 +83,6 @@ if ( ! empty( $videoList['items'] ) ) {
 				</div>
 
 			</div>
-		
 
 
 
@@ -99,16 +98,16 @@ if ( ! empty( $videoList['items'] ) ) {
 </div>
 <div class="posts__container">
 	<?php
-		$homepagePosts = new WP_Query(
+		$homepage_posts = new WP_Query(
 			array(
 				'posts_per_page' => 4,
 				'post_type'      => 'post',
 			)
 		);
-		if ( $homepagePosts->have_posts() ) {
+		if ( $homepage_posts->have_posts() ) {
 
-			while ( $homepagePosts->have_posts() ) {
-				$homepagePosts->the_post();
+			while ( $homepage_posts->have_posts() ) {
+				$homepage_posts->the_post();
 				$author_id  = get_the_author_meta( 'ID' );
 				$avatar_url = get_avatar_url( $author_id );
 				?>
@@ -122,9 +121,9 @@ if ( ! empty( $videoList['items'] ) ) {
 			</div>
 			<div class="title">
 				<h3>
-				  <a href="<?php the_permalink(); ?>">
+				<a href="<?php the_permalink(); ?>">
 					<?php the_title(); ?>
-				  </a>
+				</a>
 				</h3>
 
 				<a href="<?php the_permalink(); ?>"><?php the_category(); ?></a>

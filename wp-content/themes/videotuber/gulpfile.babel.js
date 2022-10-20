@@ -11,6 +11,7 @@ import named from 'vinyl-named';
 import browserSync from 'browser-sync';
 import zip from 'gulp-zip';
 
+
 const server = browserSync.create();
 
 // import sass from 'gulp-sass';
@@ -26,7 +27,7 @@ const paths = {
         dest: 'dist/assets/images',
     },
     scripts: {
-        src: 'src/assets/js/bundle.js',
+        src: ['src/assets/js/bundle.js', 'src/assets/js/dialog.js'],
         dest: 'dist/assets/js'
 
     },

@@ -15,8 +15,84 @@ body{
 	background-color: var(--white);
 	font-family: "Roboto", sans-serif;
 	color: var(--black);
+    dialog::backdrop {
+        backdrop-filter: blur(3px);
+    }
+    #dialog{
+        width: 900px;
+        height: 900px;
+        margin: auto;
 
+        .dialog__content{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: red;
 
+            iframe{
+                width: 95%;
+                height: 60%;
+                margin: auto;
+            }
+        }
+        span{
+            cursor: pointer;
+            font-size: 25px;
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            color: white;
+        }
+    }
+
+    .play__button {
+        cursor: pointer;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: red;
+        border-radius: 50% / 10%;
+        color: #FFFFFF;
+        font-size: 14px; /* change this to change size */
+        height: 3em;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        text-indent: 0.1em;
+        transition: all 150ms ease-out;
+        width: 4em;
+      }
+      
+      .play__button:hover {
+        background: darkorange;
+      }
+      
+      .play__button::before { 
+        background: inherit;
+        border-radius: 5% / 50%;
+        bottom: 9%;
+        content: "";
+        left: -5%;
+        position: absolute;
+        right: -5%;
+        top: 9%;
+      }
+      
+      .play__button::after {
+        border-style: solid;
+        border-width: 1em 0 1em 1.732em;
+        border-color: transparent transparent transparent rgba(255, 255, 255, 0.75);
+        content: ' ';
+        font-size: 0.75em;
+        height: 0;
+        margin: -1em 0 0 -0.75em;
+        top: 50%;
+        position: absolute;
+        width: 0;
+      }
     a{
         text-decoration: none;
     }
@@ -42,6 +118,7 @@ body{
             .video__thumbnail {
                 width: 100%;
                 height: 170px;
+                position: relative;
 
                 img {
                     object-fit: cover;
@@ -136,6 +213,29 @@ body{
             -webkit-align-items: center;
             align-items: center;
           }
+    }
+
+    /* Contact Page */
+    .contact__container{
+        display: grid;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        grid-template-columns: 2fr 1fr;
+        padding: 15px;
+
+        .container__left{
+
+            h1{
+                margin-bottom: 25px;
+
+            }
+            p{
+                margin-bottom: 25px;
+            }
+
+        }
+
+
     }
 }
 

@@ -22,7 +22,7 @@ function videotuber_set_post_view() {
 
 	$count++;
 
-	update_post_meta( $post_id, $key, $count );
+	update_post_meta( 'post', $post_id, $key, $count );
 
 }
 
@@ -40,7 +40,7 @@ function videotuber_posts_custom_column_views( $column ) {
 
 	if ( $column === 'post_views' ) {
 
-		echo gt_get_post_view();
+		echo videotuber_get_post_view();
 
 	}
 

@@ -1,24 +1,25 @@
 <?php wp_footer(); ?>
 
 <div id="footer" class="footer">
+		<?php $videotuber_socials = array(
+			'facebook' => get_theme_mod('facebook_social_link'),
+			'instagram' => get_theme_mod('instagram_social_link'),
+			'tiktok' => get_theme_mod('tiktok_social_link'),
+			'twitter' => get_theme_mod('twitter_social_link'),
+			'youtube' => get_theme_mod('youtube_social_link'),
+		);
+		$videotuber_valid_socials = array_filter($videotuber_socials);
+		if(array_filter($videotuber_valid_socials)): ?>
 	<div class="videotuber-socials">
 		<h3>Follow me on:</h3>
-		<a class="videotuber-social-link" href="<?php echo get_theme_mod('facebook_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/facebook.svg>' ?>
+		<?php foreach($videotuber_valid_socials as $key => $value) { ?>
+		<a class="videotuber-social-link" href="<?php echo $value;//get_theme_mod('facebook_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
+		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/'. $key . '.svg>' ?>
 		</a>
-		<a class="videotuber-social-link" href="<?php echo get_theme_mod('instagram_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/instagram.svg>' ?>
-		</a>
-		<a class="videotuber-social-link" href="<?php echo get_theme_mod('tiktok_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/tiktok.svg>' ?>
-		</a>
-		<a class="videotuber-social-link" href="<?php echo get_theme_mod('twitter_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/twitter.svg>' ?>
-		</a>
-		<a class="videotuber-social-link" href="<?php echo get_theme_mod('youtube_social_link') ?>" target="_blank" rel="noreferrer nofollow" aria-label="Twitter" title="Twitter">
-		<?php echo '<img src='. WPR_VIDEOTUBER_PATH . '/dist/assets/images/youtube.svg>' ?>
-		</a>
+		<?php } ?>
+		
 	</div>
+	<?php endif; ?>
 	<div class="videotuber-middle-footer">
 	<?php
 	wp_nav_menu(array(

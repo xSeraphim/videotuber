@@ -3,8 +3,8 @@
 
 <!-- Slider main container -->
 <div class="swiper" id="js-main-slider">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
 	<!-- Slides -->
 	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/astronaut_ring_neon_156673_1920x1080.jpg);" class="swiper-slide">
 		<h2 class="xl">Hey, this is Asmongold</h2>
@@ -13,16 +13,16 @@
 	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_acorn_art_129982_1920x1080.jpg);" class="swiper-slide"></div>
 	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_cave_light_art_94937_1920x1080.jpg);" class="swiper-slide"></div>
 	...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+</div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <!-- <div class="swiper-scrollbar"></div> -->
+<!-- If we need scrollbar -->
+<!-- <div class="swiper-scrollbar"></div> -->
 </div>
 
 <div class="page__featured-videos_text">
@@ -31,7 +31,7 @@
 
 <?php
 
-$videoList               = videotuber_call_api();
+$video_list              = videotuber_call_api();
 $videotuber_api_settings = get_option( 'wpr_option' );
 $videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 $videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
@@ -40,8 +40,8 @@ $videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 ?>
 <div class="videos__container">
 <?php
-if ( ! empty( $videoList['items'] ) ) {
-	foreach ( $videoList['items'] as $item ) {
+if ( ! empty( $video_list['items'] ) ) {
+	foreach ( $video_list['items'] as $item ) {
 
 
 		if ( isset( $item['id']['videoId'] ) ) {
@@ -66,10 +66,11 @@ if ( ! empty( $videoList['items'] ) ) {
 			?>
 		<div class="video">
 				<div class="video__thumbnail">
-					<iframe class="lazy" width="310" height="170"  data-src="<?php echo $vid_id; ?>" frameborder="0"
+					<!-- <iframe class="lazy" width="310" height="170"  data-src="<?php // echo $vid_id; ?>" frameborder="0"
 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-	allowfullscreen ;></iframe>
-					
+	allowfullscreen ;></iframe> -->
+					<img data-src="<?php echo $vid_thumb; ?>" class="lazy">
+					<div class="play__button" data-id="<?php echo $item['id']['videoId']; ?>"></div>
 				</div>
 				<div class="video__details">
 					<div class="author">
@@ -92,7 +93,7 @@ if ( ! empty( $videoList['items'] ) ) {
 }
 
 ?>
- </div>  
+</div>  
 <div class="page__featured-videos_text">
 	<h2 class="xl">Latest Blog Posts</h2>
 </div>
@@ -113,7 +114,7 @@ if ( ! empty( $videoList['items'] ) ) {
 				?>
 	<div class="post">
 		<div class="post__thumbnail">
-			<img src="<?php the_post_thumbnail_url(); ?>" alt="" />
+			<img data-src="<?php the_post_thumbnail_url(); ?>" alt="" class="lazy"/>
 		</div>
 		<div class="post__details">
 			<div class="author">
@@ -141,5 +142,7 @@ if ( ! empty( $videoList['items'] ) ) {
    
 
 </div>
-
-<?php get_footer(); ?>
+<dialog id="dialog"><div class="dialog__content"></div><span>X</span></dialog>
+<?php
+get_footer();
+?>

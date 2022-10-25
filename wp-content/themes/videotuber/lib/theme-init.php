@@ -161,17 +161,7 @@ function videotuber_footer_dynamic_css() {
 }
 add_action( 'wp_head', 'videotuber_footer_dynamic_css' );
 
-// function videotuber_dialog_scripts(){
-// 	wp_enqueue_script( 'dialog', WPR_VIDEOTUBER_URL . 'dist/assets/js/dialog.js', array( 'jquery' ), '1.0.0', true );
-// 	wp_localize_script(
-// 		'dialog',
-// 		'WPR',
-// 		array(
-// 			'ajax_url'   => admin_url( 'admin-ajax.php' ),
-// 			'ajax_nonce' => wp_create_nonce( 'dialog' ),
-// 		)
-// 	);
-// }
+
 function videotuber_show_video_modal() {
 	header( 'Content-Type: application/json' );
 	$vid_id  = $_GET['id'];

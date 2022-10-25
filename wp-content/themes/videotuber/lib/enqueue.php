@@ -17,6 +17,15 @@ function videtuber_add_styles() {
 			'ajax_nonce' => wp_create_nonce( 'dialog' ),
 		)
 	);
+	wp_enqueue_script( 'search', get_theme_file_uri( '/dist/assets/js/search.js' ), array( 'jquery' ), '1.0.0', true );
+	wp_localize_script(
+		'search',
+		'WPR',
+		array(
+			'ajax_url'   => admin_url( 'admin-ajax.php' ),
+			'ajax_nonce' => wp_create_nonce( 'search' ),
+		)
+	);
 
 }
 add_action( 'wp_enqueue_scripts', 'videtuber_add_styles' );

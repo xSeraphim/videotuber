@@ -82,12 +82,12 @@ function videotuber_call_api() {
 	$videotuber_api_settings = get_option( 'wpr_option' );
 	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
-	$videotuber_max_results  = $videotuber_api_settings['wpr_api_max_results'];
+
 	$url                     = add_query_arg(
 		array(
-			'part'       => array( 'snippet', 'statistics' ),
+			'part'       => 'snippet',
 			'channelId'  => '' . $videotuber_channel_id . '',
-			'maxResults' => $videotuber_max_results,
+			// 'maxResults' => $videotuber_max_results,
 			'order'      => 'date',
 			'type'       => 'video',
 			'key'        => '' . $videotuber_api_key . '',
@@ -99,6 +99,72 @@ function videotuber_call_api() {
 	return json_decode( wp_remote_retrieve_body( $response ), true );
 }
 
+function videotuber_call_api_by_keyword() {
+	header( 'Content-Type: application/json' );
+	$q = $_GET['q'];
+	$videotuber_api_settings = get_option( 'wpr_option' );
+	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
+	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
+	$url                     = add_query_arg(
+		array(
+			'part'       => 'snippet',
+			'channelId'  => '' . $videotuber_channel_id . '',
+			'maxResults' => '25',
+			'order'      => 'date',
+			'type'       => 'video',
+			'key'        => '' . $videotuber_api_key . '',
+			'q'			 => '' . $q . '',
+		),
+		'https://youtube.googleapis.com/youtube/v3/search'
+	);
+
+	$response = wp_remote_get( esc_url_raw( $url ) );
+	$video_list = json_decode( wp_remote_retrieve_body( $response ), true );
+	echo wp_json_encode($video_list);
+	wp_die();
+	// if ( ! empty( $video_list['items'] ) ) {
+	// 	foreach ( $video_list['items'] as $item ) {
+	
+	
+	// 		if ( isset( $item['id']['videoId'] ) ) {
+	// 			$url = add_query_arg(
+	// 				array(
+	// 					'part' => 'snippet' . '&part=statistics',
+	// 					'id'   => '' . $item['id']['videoId'] . '',
+	// 					'key'  => '' . $videotuber_api_key . '',
+	// 				),
+	// 				'https://www.googleapis.com/youtube/v3/videos'
+	// 			);
+	// 			// var_dump($url);
+	// 			$json  = wp_remote_get( esc_url_raw( $url ) );
+	// 			$video = json_decode( wp_remote_retrieve_body( $json ), true );
+	// 			// var_dump($video['items']);
+	// 			$vid_id           = $item['id']['videoId'];
+	// 			$vid_thumb        = 'https://img.youtube.com/vi/' . $item['id']['videoId'] . '/mqdefault.jpg';
+	// 			$vid_title        = $video['items'][0]['snippet']['title'];
+	// 			$vid_channel_name = $video['items'][0]['snippet']['channelTitle'];
+	// 			$vid_post_date    = $video['items'][0]['snippet']['publishedAt'];
+	// 			$vid_views        = $video['items'][0]['statistics']['viewCount'];
+
+	// 			$data = array(
+	// 				'vid_id' => $vid_id,
+	// 				'vid_thumb' => $vid_thumb,
+	// 				'vid_title' => $vid_title,
+	// 				'vid_channel_name' => $vid_channel_name,
+	// 				'vid_post_date' => $vid_post_date,
+	// 				'vid_views' => $vid_views,
+
+	// 			);
+	// 			echo wp_json_encode( $data );
+	// 			wp_die();
+				
+	// 		}}}
+			
+
+
+}
+add_action( 'wp_ajax_videotuber_call_api_by_keyword', 'videotuber_call_api_by_keyword' );
+add_action( 'wp_ajax_nopriv_videotuber_call_api_by_keyword', 'videotuber_call_api_by_keyword' );
 
 
 function api_fields_callback( $args ) {

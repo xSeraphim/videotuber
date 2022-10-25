@@ -26,15 +26,17 @@
 </div>
 
 <div class="page__featured-videos_text">
-	<h2 class="xl">Latest Videos</h2>
+	<h2 class="font-size-xxl">Latest Videos</h2>
 </div>
 
 <?php
-
-$video_list              = videotuber_call_api();
 $videotuber_api_settings = get_option( 'wpr_option' );
 $videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 $videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
+$videotuber_max_results  = $videotuber_api_settings['wpr_api_max_results'];
+$video_list              = videotuber_call_api();
+
+
 
 
 ?>
@@ -77,12 +79,11 @@ if ( ! empty( $video_list['items'] ) ) {
 						<img src="http://videotuber.local/wp-content/uploads/2022/09/asmongold-TV.jpg">
 					</div>
 					<div class="title">
-						<h3><?php echo $vid_title; ?></h3>
+						<h3 class="font-size-lg"><?php echo $vid_title; ?></h3>
 						<a href=<?php echo "https://www.youtube.com/channel/$videotuber_channel_id"; ?>><?php echo $vid_channel_name; ?></a> 
 						<span><?php echo videotuber_video_views( $vid_views ) . ' views'; ?> • <?php echo videotuber_get_time_ago( strtotime( $vid_post_date ) ); ?></span>
 					</div>
 				</div>
-
 			</div>
 
 
@@ -95,13 +96,13 @@ if ( ! empty( $video_list['items'] ) ) {
 ?>
 </div>  
 <div class="page__featured-videos_text">
-	<h2 class="xl">Latest Blog Posts</h2>
+	<h2 class="font-size-xxl">Latest Blog Posts</h2>
 </div>
 <div class="posts__container">
 	<?php
 		$homepage_posts = new WP_Query(
 			array(
-				'posts_per_page' => 4,
+				'posts_per_page' => 5,
 				'post_type'      => 'post',
 			)
 		);

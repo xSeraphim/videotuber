@@ -237,6 +237,40 @@ body{
 
 
     }
+
+    .videotuber__posts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .videotuber__container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 40px;
+
+        .videotuber__post_banner{
+
+
+            .videotuber__categories{
+
+                a{
+                    text-decoration: none;
+                    color: var(--black);
+                }
+            }
+        }
+        .videotuber__post_content{
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            p{
+                font-size:clamp(1.95rem, 1.22vw + 1.65rem, 3.11rem);
+            }
+        }
+    }
 }
 
 

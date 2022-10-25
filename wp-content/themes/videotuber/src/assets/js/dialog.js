@@ -19,7 +19,7 @@
                     $('#dialog .dialog__content').empty();
                     console.log(response);
                     var html = `
-                    <iframe src="${response['url']}" frameborder="0"
+                    <iframe src="${response['url']}?autoplay=1" frameborder="0"
 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 	allowfullscreen ;></iframe>
                     `;
@@ -31,7 +31,7 @@
     });
 
     $('#dialog span').click(function(){
-        
+        $('#dialog .dialog__content').empty();
         dialog.close();
         
     });

@@ -109,7 +109,7 @@ function videotuber_call_api_by_keyword() {
 		array(
 			'part'       => 'snippet',
 			'channelId'  => '' . $videotuber_channel_id . '',
-			'maxResults' => '25',
+			'maxResults' => 25,
 			'order'      => 'date',
 			'type'       => 'video',
 			'key'        => '' . $videotuber_api_key . '',

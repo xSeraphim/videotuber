@@ -8,19 +8,18 @@ $video_list              = videotuber_call_api();
 $videotuber_api_settings = get_option( 'wpr_option' );
 $videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 $videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
-
+$videotuber_channel_image = videotuber_get_channel_image();
 
 ?>
 
 <div class="page__featured-videos_text">
 	<h2 class="font-size-xxl">My Youtube Videos</h2>
     <p class="font-size-lg">You can use the search function to find the videos that you like.</p>
-    <div class="header__search" id="videotuber__search">
+    <div class="videotuber__search" id="videotuber__search">
 		  <input type="text" placeholder="Search using keywords for videos on my channel.." />
-		  <button><i class="material-icons">search</i></button>
     </div>
 </div>
-
+<div class="grid-4 grid--tablet2 grid--mobile1">
 <div class="videos__container" id="videos__container">
 <?php
 if ( ! empty( $video_list['items'] ) ) {
@@ -57,7 +56,7 @@ if ( ! empty( $video_list['items'] ) ) {
 				</div>
 				<div class="video__details">
 					<div class="author">
-						<img src="http://videotuber.local/wp-content/uploads/2022/09/asmongold-TV.jpg">
+						<img src="<?php echo $videotuber_channel_image['items'][0]['snippet']['thumbnails']['medium']['url'] ?>">
 					</div>
 					<div class="title">
 						<h3 class="font-size-lg"><?php echo $vid_title; ?></h3>
@@ -76,8 +75,9 @@ if ( ! empty( $video_list['items'] ) ) {
 }
 
 ?>
+</div>
 </div>  
-<dialog id="dialog"><div class="dialog__content"></div><span>X</span></dialog>
+<dialog id="dialog"><div class="dialog__content"></div><span><i class="material-icons">close</i></span></dialog>
 
 <?php
 get_footer();

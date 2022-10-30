@@ -175,3 +175,22 @@ function videotuber_show_video_modal() {
 }
 add_action( 'wp_ajax_videotuber_show_video_modal', 'videotuber_show_video_modal' );
 add_action( 'wp_ajax_nopriv_videotuber_show_video_modal', 'videotuber_show_video_modal' );
+
+
+function videotuber_get_channel_image() {
+	$videotuber_api_settings = get_option( 'wpr_option' );
+	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
+	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
+
+	$url                     = add_query_arg(
+		array(
+			'part'       => 'snippet',
+			'id'  => '' . $videotuber_channel_id . '',
+			'key'        => '' . $videotuber_api_key . '',
+		),
+		'https://youtube.googleapis.com/youtube/v3/channels'
+	);
+
+	$response = wp_remote_get( esc_url_raw( $url ) );
+	return json_decode( wp_remote_retrieve_body( $response ), true );
+}

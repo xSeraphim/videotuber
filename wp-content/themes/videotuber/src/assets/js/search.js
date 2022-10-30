@@ -78,7 +78,7 @@
                                 maxResults: 1,
                                 // order: 'title',
                                 id: response.items[i]['id']['videoId'],
-                                key: 'AIzaSyBcm4jEG5zu4pPJYH7ARgxD2FLF9D8q4Bc', //TO DO:replace hardcoded key with key from backend
+                                key: 'AIzaSyC_U_CACz4wfMZDeA0sFwbhvl3FyELE5gI', //TO DO:replace hardcoded key with key from backend
                             },
                             success: function(response){
                                 // console.log(response.items[0]['snippet']['thumbnails']['medium']);

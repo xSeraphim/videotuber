@@ -35,11 +35,12 @@ $videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 $videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 $videotuber_max_results  = $videotuber_api_settings['wpr_api_max_results'];
 $video_list              = videotuber_call_api();
-
+$videotuber_channel_image = videotuber_get_channel_image();
 
 
 
 ?>
+<div class="grid-4 grid--tablet2 grid--mobile1">
 <div class="videos__container">
 <?php
 if ( ! empty( $video_list['items'] ) ) {
@@ -76,7 +77,7 @@ if ( ! empty( $video_list['items'] ) ) {
 				</div>
 				<div class="video__details">
 					<div class="author">
-						<img src="http://videotuber.local/wp-content/uploads/2022/09/asmongold-TV.jpg">
+						<img src="<?php echo $videotuber_channel_image['items'][0]['snippet']['thumbnails']['medium']['url'] ?>">
 					</div>
 					<div class="title">
 						<h3 class="font-size-lg"><?php echo $vid_title; ?></h3>
@@ -95,9 +96,11 @@ if ( ! empty( $video_list['items'] ) ) {
 
 ?>
 </div>  
+</div>
 <div class="page__featured-videos_text">
 	<h2 class="font-size-xxl">Latest Blog Posts</h2>
 </div>
+<div class="grid-4 grid--tablet2 grid--mobile1">
 <div class="posts__container">
 	<?php
 		$homepage_posts = new WP_Query(
@@ -133,6 +136,7 @@ if ( ! empty( $video_list['items'] ) ) {
 			</div>
 		</div>
 </div>
+
 				<?php
 			}
 		} else {
@@ -143,7 +147,8 @@ if ( ! empty( $video_list['items'] ) ) {
    
 
 </div>
-<dialog id="dialog"><div class="dialog__content"></div><span>X</span></dialog>
+	</div>
+<dialog id="dialog"><div class="dialog__content"></div><span><i class="material-icons">close</i></span></dialog>
 <?php
 get_footer();
 ?>

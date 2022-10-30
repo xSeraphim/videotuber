@@ -69,7 +69,7 @@
                 // console.log(response);
                 if (response.items) {
                     for (var i = 0; i < response.items.length; i++) {
-                        // console.log(response.items[i]['id']['videoId']);
+                        console.log(response.items['api']);
                         $.ajax({  
                             url: 'https://www.googleapis.com/youtube/v3/videos', 
                             type: 'GET', 
@@ -78,7 +78,7 @@
                                 maxResults: 1,
                                 // order: 'title',
                                 id: response.items[i]['id']['videoId'],
-                                key: 'AIzaSyC_U_CACz4wfMZDeA0sFwbhvl3FyELE5gI', //TO DO:replace hardcoded key with key from backend
+                                key: response.api, 
                             },
                             success: function(response){
                                 // console.log(response.items[0]['snippet']['thumbnails']['medium']);

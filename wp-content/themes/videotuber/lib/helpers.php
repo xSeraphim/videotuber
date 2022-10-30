@@ -120,6 +120,8 @@ function videotuber_call_api_by_keyword() {
 
 	$response = wp_remote_get( esc_url_raw( $url ) );
 	$video_list = json_decode( wp_remote_retrieve_body( $response ), true );
+	// Add key value api to video_list array for search js
+	$video_list['api'] = $videotuber_api_key;
 	echo wp_json_encode($video_list);
 	wp_die();
 	// if ( ! empty( $video_list['items'] ) ) {

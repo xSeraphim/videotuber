@@ -30,12 +30,14 @@
 </div>
 
 <?php
+$videotuber_max_results  = 6;
 $videotuber_api_settings = get_option( 'wpr_option' );
 $videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 $videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 $videotuber_max_results  = $videotuber_api_settings['wpr_api_max_results'];
-$video_list              = videotuber_call_api();
+$video_list              = videotuber_call_api($videotuber_max_results);
 $videotuber_channel_image = videotuber_get_channel_image();
+
 
 
 
@@ -77,7 +79,7 @@ if ( ! empty( $video_list['items'] ) ) {
 				</div>
 				<div class="video__details">
 					<div class="author">
-						<img src="<?php echo $videotuber_channel_image['items'][0]['snippet']['thumbnails']['medium']['url'] ?>">
+						<img src="<?php echo $videotuber_channel_image; ?>">
 					</div>
 					<div class="title">
 						<h3 class="font-size-lg"><?php echo $vid_title; ?></h3>

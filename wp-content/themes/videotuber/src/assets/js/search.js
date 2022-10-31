@@ -69,7 +69,7 @@
                 // console.log(response);
                 if (response.items) {
                     for (var i = 0; i < response.items.length; i++) {
-                        console.log(response.items['api']);
+                        // console.log(response.items['api']);
                         $.ajax({  
                             url: 'https://www.googleapis.com/youtube/v3/videos', 
                             type: 'GET', 

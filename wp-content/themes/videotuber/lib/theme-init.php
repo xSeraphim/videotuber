@@ -191,6 +191,6 @@ function videotuber_get_channel_image() {
 		'https://youtube.googleapis.com/youtube/v3/channels'
 	);
 
-	$response = wp_remote_get( esc_url_raw( $url ) );
-	return json_decode( wp_remote_retrieve_body( $response ), true );
+	$json = json_decode( wp_remote_retrieve_body( wp_remote_get( esc_url_raw( $url ) )), true );
+	return $json['items'][0]['snippet']['thumbnails']['medium']['url'];
 }

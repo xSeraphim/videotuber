@@ -78,7 +78,7 @@ function videotuber_get_time_ago( $time ) {
 	}
 }
 
-function videotuber_call_api() {
+function videotuber_call_api($videotuber_max_results) {
 	$videotuber_api_settings = get_option( 'wpr_option' );
 	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
@@ -87,7 +87,7 @@ function videotuber_call_api() {
 		array(
 			'part'       => 'snippet',
 			'channelId'  => '' . $videotuber_channel_id . '',
-			// 'maxResults' => $videotuber_max_results,
+			'maxResults' => $videotuber_max_results,
 			'order'      => 'date',
 			'type'       => 'video',
 			'key'        => '' . $videotuber_api_key . '',

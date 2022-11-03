@@ -29,3 +29,16 @@ function videtuber_add_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'videtuber_add_styles' );
+
+function videotuber_admin_styles() {
+	wp_enqueue_script( 'search-admin', get_theme_file_uri( '/dist/assets/js/search-admin.js' ), array( 'jquery' ), '1.0.0', true );
+	wp_localize_script(
+		'search-admin',
+		'WPR',
+		array(
+			'ajax_url'   => admin_url( 'admin-ajax.php' ),
+			'ajax_nonce' => wp_create_nonce( 'search-admin' ),
+		)
+	);
+}
+add_action( 'admin_enqueue_scripts', 'videotuber_admin_styles' );

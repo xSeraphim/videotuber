@@ -66,6 +66,7 @@
             success: function(response){
                 
                 $('#videos__container').empty();
+                var image = response.image;
                 // console.log(response);
                 if (response.items) {
                     for (var i = 0; i < response.items.length; i++) {
@@ -90,7 +91,7 @@
                             </div>
                             <div class="video__details">
                                 <div class="author">
-                                    <img src="http://videotuber.local/wp-content/uploads/2022/09/asmongold-TV.jpg">
+                                    <img src="${image}">
                                 </div>
                                 <div class="title">
 						            <h3 class="font-size-lg">${response.items[0]['snippet']['title']}</h3>

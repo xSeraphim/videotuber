@@ -27,7 +27,7 @@ const paths = {
         dest: 'dist/assets/images',
     },
     scripts: {
-        src: ['src/assets/js/bundle.js', 'src/assets/js/dialog.js', 'src/assets/js/search.js'],
+        src: ['src/assets/js/bundle.js', 'src/assets/js/dialog.js', 'src/assets/js/search.js', 'src/assets/js/search-admin.js'],
         dest: 'dist/assets/js'
 
     },

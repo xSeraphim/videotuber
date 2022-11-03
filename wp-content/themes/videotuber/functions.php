@@ -6,6 +6,7 @@ require_once( 'lib/helpers.php' );
 require_once( 'lib/theme-init.php' );
 require_once( 'lib/enqueue.php' );
 require_once( 'lib/sidebars.php' );
+require_once( 'lib/metaboxes.php' );
 
 
 define( 'WPR_DOMAIN', 'videotuber' );

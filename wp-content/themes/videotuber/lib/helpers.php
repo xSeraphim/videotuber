@@ -103,6 +103,7 @@ function videotuber_call_api_by_keyword() {
 	header( 'Content-Type: application/json' );
 	$q = $_GET['q'];
 	$videotuber_api_settings = get_option( 'wpr_option' );
+	$videotuber_channel_image = videotuber_get_channel_image();
 	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 	$url                     = add_query_arg(
@@ -122,6 +123,7 @@ function videotuber_call_api_by_keyword() {
 	$video_list = json_decode( wp_remote_retrieve_body( $response ), true );
 	// Add key value api to video_list array for search js
 	$video_list['api'] = $videotuber_api_key;
+	$video_list['image'] = $videotuber_channel_image;
 	echo wp_json_encode($video_list);
 	wp_die();
 	// if ( ! empty( $video_list['items'] ) ) {

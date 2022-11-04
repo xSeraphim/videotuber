@@ -83,6 +83,7 @@ function videotuber_call_api($videotuber_max_results) {
 	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 
+
 	$url                     = add_query_arg(
 		array(
 			'part'       => 'snippet',

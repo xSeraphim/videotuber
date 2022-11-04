@@ -10,12 +10,24 @@
   background-color: white;
   z-index: 9;
   width: 100%;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
 
     i {
         padding: 0 7px;
         cursor: pointer;
       }
-
+    i:hover {
+      color: var(--mango);
+    }
+    #menu {
+      font-size: 3rem;
+    }
     .header__left {
         display: flex;
         align-items: center;
@@ -29,6 +41,66 @@
       .header__right {
         display: flex;
         align-items: end;
+
+        .nav {
+          height: 100%;
+          width: 280px;
+          background-color: var(--white);
+          left: 0;
+          top: 0;
+          z-index: 2;
+          position: fixed;
+          overflow-y: auto;
+          overflow-x: visible;
+          transform: translate(-280px,0);
+          display: grid;
+          align-items: center;
+          grid-template-columns: 1fr;
+
+          .menu{
+            text-align: center;
+            font-size: 3em;
+
+            li{
+                margin-bottom: 1rem;
+              a{
+                text-decoration: none;
+                color: var(--black);
+                
+              }
+              a:hover{
+                color: var(--mango);;
+              }
+              a:active{
+                color: var(--mango);;
+              }
+            }
+          }
+
+          .videotuber_contact_links{
+            text-align: center;
+
+            i{
+              font-size: 5rem;
+              color: var(--black);
+            }
+            i:hover{
+              color:var(--mango);
+            }
+          }
+        }
+
+        .ssm-overlay {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(10px);
+          display: none;
+          z-index: 1;
+        }
       }
 
       .header__search form {

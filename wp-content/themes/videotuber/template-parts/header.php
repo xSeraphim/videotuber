@@ -4,16 +4,27 @@
 		the_custom_logo();
 	}
 	?> <div class="header__icons">
-<!-- <i class="material-icons display-this">search</i> -->
-<!-- <i class="material-icons">videocam</i><i class="material-icons">apps</i><i class="material-icons">notifications</i><i class="material-icons display-this">account_circle</i> -->
 	</div>
 </div>
 <div class="header__search">
 <?php get_search_form( true ); ?>
 </div>
 <div class="header__right">
-	<!-- <i class="material-icons display-this">account_circle</i> -->
-	<i id="menu" class="material-icons">menu</i>
+<div class="ssm-overlay ssm-toggle-nav"></div>
+	<i id="menu" class="material-icons ssm-toggle-nav ssm-nav-visible">menu</i>
+	<nav class="nav">
+<?php
+	wp_nav_menu(
+		array(
+			'theme_location' => 'foooterMiddleLocation1',
+		)
+	);
+?>
+<div class="videotuber_contact_links">
+	<a href="tel:"><i class="material-icons">phone_android</i></a>
+	<a href="mailto:"><i class="material-icons">mail</i></a>
 </div>
+</nav>
 </div>
-<!-- Header Ends -->
+
+</div>

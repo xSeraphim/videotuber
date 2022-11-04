@@ -18,7 +18,7 @@
         }
 
         .videotuber-social-link img{
-            width: 32px;
+            width: 3.2rem;
             margin-right: 32px;
         }
 
@@ -32,9 +32,15 @@
         padding-top: 60px;
         width: 100%;
 
-        li a{
+        li {
+
+            a{
             color: var(--black);
             font-size: 1.6rem;
+            }
+            a:hover{
+                color: var(--mango);
+            }
         }
     }
 

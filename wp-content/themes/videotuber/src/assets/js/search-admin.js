@@ -33,17 +33,19 @@
                         `;
                         $('#videotuber_select').append(html);
                     }
+                    
 
                 }
-            },
-            complete:function(){
+                var checkedValue = $('#featured_image_set').val();
                 $('#videotuber_select').on('change',function(){
                     var videoId = $("#videotuber_select").find(':selected').attr('id');
                     var title = $("#videotuber_select").find(':selected').attr('title');
                     var imageUrl = $("#videotuber_select").find(':selected').attr('image-url');
                     data = {
                         action: 'videotuber_change_post',
-                        image: imageUrl, 
+                        image: imageUrl,
+                        checked: checkedValue,
+                        title: title, 
                     }
                     $.ajax({
                         url: WPR.ajax_url, 
@@ -57,6 +59,9 @@
 
 
                 });
+            },
+            complete:function(){
+
 
             }
         })

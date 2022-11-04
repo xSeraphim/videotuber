@@ -7,8 +7,8 @@
 <div class="swiper-wrapper">
 	<!-- Slides -->
 	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/astronaut_ring_neon_156673_1920x1080.jpg);" class="swiper-slide">
-		<h2 class="xl">Hey, this is Asmongold</h2>
-		<p class="m">Welcome to my website</p>
+		<h2 class="font-size-xxl">Hey, this is Asmongold</h2>
+		<p class="font-size-lg">Welcome to my website</p>
 	</div>
 	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_acorn_art_129982_1920x1080.jpg);" class="swiper-slide"></div>
 	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_cave_light_art_94937_1920x1080.jpg);" class="swiper-slide"></div>

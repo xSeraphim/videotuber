@@ -1,17 +1,40 @@
 <?php get_header();
 ?>
+<?php
+$videotuber_sliders = array(
+	'slider1' => array(
+		'image'     => get_theme_mod( 'videotuber_image_one' ),
+		'text'      => get_theme_mod( 'videotuber_title_one' ),
+		'paragraph' => get_theme_mod( 'videotuber_paragraph_one' ),
+	),
+	'slider2' => array(
+		'image'     => get_theme_mod( 'videotuber_image_two' ),
+		'text'      => get_theme_mod( 'videotuber_title_two' ),
+		'paragraph' => get_theme_mod( 'videotuber_paragraph_two' ),
+	),
+	'slider3' => array(
+		'image'     => get_theme_mod( 'videotuber_image_three' ),
+		'text'      => get_theme_mod( 'videotuber_title_three' ),
+		'paragraph' => get_theme_mod( 'videotuber_paragraph_three' ),
+	),
+);
 
+$videotuber_valid_sliders = array_filter( $videotuber_sliders );
+?>
+<?php if ( array_filter( $videotuber_valid_sliders ) ) : ?>
 <!-- Slider main container -->
 <div class="swiper" id="js-main-slider">
 <!-- Additional required wrapper -->
 <div class="swiper-wrapper">
 	<!-- Slides -->
-	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/astronaut_ring_neon_156673_1920x1080.jpg);" class="swiper-slide">
-		<h2 class="font-size-xxl">Hey, this is Asmongold</h2>
-		<p class="font-size-lg">Welcome to my website</p>
+	<?php foreach ( $videotuber_valid_sliders as $key => $value ) { ?>
+	<div style="background-image:url(<?php echo wp_get_attachment_url( $value['image'] ); ?>);" class="swiper-slide">
+		<h2 class="font-size-xxl"><?php echo $value['text']; ?></h2>
+		<p class="font-size-lg"><?php echo $value['paragraph']; ?></p>
 	</div>
-	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_acorn_art_129982_1920x1080.jpg);" class="swiper-slide"></div>
-	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_cave_light_art_94937_1920x1080.jpg);" class="swiper-slide"></div>
+<?php } ?>
+	<!-- <div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_acorn_art_129982_1920x1080.jpg);" class="swiper-slide"></div>
+	<div style="background-image:url(http://videotuber.local/wp-content/uploads/2022/10/dragon_cave_light_art_94937_1920x1080.jpg);" class="swiper-slide"></div> -->
 	...
 </div>
 <!-- If we need pagination -->
@@ -24,18 +47,18 @@
 <!-- If we need scrollbar -->
 <!-- <div class="swiper-scrollbar"></div> -->
 </div>
-
+<?php endif ?>
 <div class="page__featured-videos_text">
 	<h2 class="font-size-xxl">Latest Videos</h2>
 </div>
 
 <?php
-$videotuber_max_results  = 6;
-$videotuber_api_settings = get_option( 'wpr_option' );
-$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
-$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
-$videotuber_max_results  = $videotuber_api_settings['wpr_api_max_results'];
-$video_list              = videotuber_call_api($videotuber_max_results);
+$videotuber_max_results   = 6;
+$videotuber_api_settings  = get_option( 'wpr_option' );
+$videotuber_api_key       = $videotuber_api_settings['wpr_api_token'];
+$videotuber_channel_id    = $videotuber_api_settings['wpr_api_client_id'];
+$videotuber_max_results   = $videotuber_api_settings['wpr_api_max_results'];
+$video_list               = videotuber_call_api( $videotuber_max_results );
 $videotuber_channel_image = videotuber_get_channel_image();
 
 

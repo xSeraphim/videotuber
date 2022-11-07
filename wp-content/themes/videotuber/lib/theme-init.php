@@ -146,6 +146,204 @@ function videotuber_theme_options( $wp_customize ) {
 			)
 		)
 	);
+
+	// Front Page Customizer begin section
+	$wp_customize->add_section(
+		'videotuber_front_options',
+		array(
+			'title'       => __( 'VideoTuber Frontpage Options', 'videotuber' ),
+			'priority'    => 100,
+			'capability'  => 'edit_theme_options',
+			'description' => __( 'Change Videotuber Frontpage options here.', 'videotuber' ),
+		)
+	);
+	//Slider Customizer settings
+	$wp_customize->add_setting(
+		'videotuber_image_one',
+		array(
+			'sanitize_callback' => 'absint',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_setting(
+		'videotuber_image_two',
+		array(
+			'sanitize_callback' => 'absint',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_setting(
+		'videotuber_image_three',
+		array(
+			'sanitize_callback' => 'absint',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	// Text Customizer settings
+	$wp_customize->add_setting(
+		'videotuber_title_one',
+		array(
+			'sanitize_callback' => 'sanitize_text_field',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_setting(
+		'videotuber_paragraph_one',
+		array(
+			'sanitize_callback' => 'sanitize_textarea_field',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_setting(
+		'videotuber_title_two',
+		array(
+			'sanitize_callback' => 'sanitize_text_field',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_setting(
+		'videotuber_paragraph_two',
+		array(
+			'sanitize_callback' => 'sanitize_textarea_field',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_setting(
+		'videotuber_title_three',
+		array(
+			'sanitize_callback' => 'sanitize_text_field',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_setting(
+		'videotuber_paragraph_three',
+		array(
+			'sanitize_callback' => 'sanitize_textarea_field',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+
+	// Text and Slider Image 1 Controls
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'videotuber_title_one_text',
+			array(
+				'label'    => __( 'Set the first slider CTA text', 'videotuber' ),
+				'section'  => 'videotuber_front_options',
+				'settings' => 'videotuber_title_one',
+				'type'     => 'text',
+			)
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'videotuber_paragraph_one_text',
+			array(
+				'label'    => __( 'Set the first slider paragraph text', 'videotuber' ),
+				'section'  => 'videotuber_front_options',
+				'settings' => 'videotuber_paragraph_one',
+				'type'     => 'textarea',
+			)
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Media_Control(
+			$wp_customize,
+			'videotuber_image_one',
+			array(
+				'label'     => __( 'Set the first slider image', 'videotuber' ),
+				'section'   => 'videotuber_front_options',
+				'mime_type' => 'image',
+			)
+		)
+	);
+
+	// Text and Slider Image 2 Controls
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'videotuber_title_two_text',
+			array(
+				'label'    => __( 'Set the second slider CTA text', 'videotuber' ),
+				'section'  => 'videotuber_front_options',
+				'settings' => 'videotuber_title_two',
+				'type'     => 'text',
+			)
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'videotuber_paragraph_two_text',
+			array(
+				'label'    => __( 'Set the second slider paragraph text', 'videotuber' ),
+				'section'  => 'videotuber_front_options',
+				'settings' => 'videotuber_paragraph_two',
+				'type'     => 'textarea',
+			)
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Media_Control(
+			$wp_customize,
+			'videotuber_image_two',
+			array(
+				'label'     => __( 'Set the second slider image', 'videotuber' ),
+				'section'   => 'videotuber_front_options',
+				'mime_type' => 'image',
+			)
+		)
+	);
+
+	// Text and Slider Image 3 Controls
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'videotuber_title_three_text',
+			array(
+				'label'    => __( 'Set the third slider CTA text', 'videotuber' ),
+				'section'  => 'videotuber_front_options',
+				'settings' => 'videotuber_title_three',
+				'type'     => 'text',
+			)
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'videotuber_paragraph_three_text',
+			array(
+				'label'    => __( 'Set the third slider paragraph text', 'videotuber' ),
+				'section'  => 'videotuber_front_options',
+				'settings' => 'videotuber_paragraph_three',
+				'type'     => 'textarea',
+			)
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Media_Control(
+			$wp_customize,
+			'videotuber_image_three',
+			array(
+				'label'     => __( 'Set the third slider image', 'videotuber' ),
+				'section'   => 'videotuber_front_options',
+				'mime_type' => 'image',
+			)
+		)
+	);
+
+	// End FrontPage Customizer Section
 }
 add_action( 'customize_register', 'videotuber_theme_options' );
 
@@ -182,15 +380,15 @@ function videotuber_get_channel_image() {
 	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 
-	$url                     = add_query_arg(
+	$url = add_query_arg(
 		array(
-			'part'       => 'snippet',
-			'id'  => '' . $videotuber_channel_id . '',
-			'key'        => '' . $videotuber_api_key . '',
+			'part' => 'snippet',
+			'id'   => '' . $videotuber_channel_id . '',
+			'key'  => '' . $videotuber_api_key . '',
 		),
 		'https://youtube.googleapis.com/youtube/v3/channels'
 	);
 
-	$json = json_decode( wp_remote_retrieve_body( wp_remote_get( esc_url_raw( $url ) )), true );
+	$json = json_decode( wp_remote_retrieve_body( wp_remote_get( esc_url_raw( $url ) ) ), true );
 	return $json['items'][0]['snippet']['thumbnails']['medium']['url'];
 }

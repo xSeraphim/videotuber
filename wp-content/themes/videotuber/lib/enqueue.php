@@ -1,6 +1,5 @@
 <?php
 
-
 function videtuber_add_styles() {
 
 	wp_enqueue_style( 'videotuber_bundle_styles', get_theme_file_uri( '/dist/assets/css/bundle.css' ) );

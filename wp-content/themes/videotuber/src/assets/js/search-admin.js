@@ -13,7 +13,7 @@
       $('#videotuber_post_metabox #videotuber_admin_search input').keyup(delay(doAjax, 1000));
 
       function doAjax() {
-        var q = $('#videotuber_post_metabox #videotuber_admin_search input').val();
+        var q = $('#videotuber_post_metabox #videotuber_admin_search #videotuber_post_input').val();
         console.log(q);
         data = {
             action: 'videotuber_call_api_by_keyword',
@@ -34,9 +34,11 @@
                         $('#videotuber_select').append(html);
                     }
                     
-
                 }
-                var checkedValue = $('#featured_image_set').val();
+
+            },
+            complete:function(){
+                var checkedValue = $('#videotuber_post_metabox #videotuber_admin_search #featured_image_set').val();
                 $('#videotuber_select').on('change',function(){
                     var videoId = $("#videotuber_select").find(':selected').attr('id');
                     var title = $("#videotuber_select").find(':selected').attr('title');
@@ -58,9 +60,7 @@
                     // console.log(imageUrl); 
 
 
-                });
-            },
-            complete:function(){
+                });                   
 
 
             }

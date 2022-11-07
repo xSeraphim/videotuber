@@ -7,7 +7,7 @@
 	</head>
 <body <?php body_class(); ?>>
 	<?php
-// Elementor `header` location
-if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
-	get_template_part( 'template-parts/header' );
-}
+	// Elementor `header` location
+	if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
+		get_template_part( 'template-parts/header' );
+	}

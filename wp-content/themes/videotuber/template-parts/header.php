@@ -16,10 +16,10 @@
 <?php
 	wp_nav_menu(
 		array(
-			'theme_location' => 'foooterMiddleLocation1',
+			'theme_location' => 'headerMenuLocation',
 		)
 	);
-?>
+	?>
 <div class="videotuber_contact_links">
 	<a href="tel:"><i class="material-icons">phone_android</i></a>
 	<a href="mailto:"><i class="material-icons">mail</i></a>

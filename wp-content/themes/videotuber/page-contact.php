@@ -9,7 +9,7 @@ get_header();
 
 	<?php if ( is_active_sidebar( 'primary-sidebar' ) ) { ?>
 	<div class="container__right">
-		<?php get_sidebar('primary-sidebar'); ?>
+		<?php get_sidebar( 'primary-sidebar' ); ?>
 	</div>
 	<?php } ?>
 </div>

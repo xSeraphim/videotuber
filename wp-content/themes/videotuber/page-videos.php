@@ -1,23 +1,24 @@
 <?php
+
 get_header();
 ?>
 
 <?php
-$videotuber_max_results  = '10';
-$video_list              = videotuber_call_api($videotuber_max_results);
-$videotuber_api_settings = get_option( 'wpr_option' );
-$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
-$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
+$videotuber_max_results   = '10';
+$video_list               = videotuber_call_api( $videotuber_max_results );
+$videotuber_api_settings  = get_option( 'wpr_option' );
+$videotuber_api_key       = $videotuber_api_settings['wpr_api_token'];
+$videotuber_channel_id    = $videotuber_api_settings['wpr_api_client_id'];
 $videotuber_channel_image = videotuber_get_channel_image();
 
 ?>
 
 <div class="page__featured-videos_text">
 	<h2 class="font-size-xxl">My Youtube Videos</h2>
-    <p class="font-size-lg">You can use the search function to find the videos that you like.</p>
-    <div class="videotuber__search" id="videotuber__search">
-		  <input type="text" placeholder="Search using keywords for videos on my channel.." />
-    </div>
+	<p class="font-size-lg">You can use the search function to find the videos that you like.</p>
+	<div class="videotuber__search" id="videotuber__search">
+		<input type="text" placeholder="Search using keywords for videos on my channel.." />
+	</div>
 </div>
 <div class="grid-4 grid--tablet2 grid--mobile1">
 <div class="videos__container" id="videos__container">

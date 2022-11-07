@@ -38,7 +38,7 @@ function videotuber_posts_column_views( $columns ) {
 
 function videotuber_posts_custom_column_views( $column ) {
 
-	if ( $column === 'post_views' ) {
+	if ( 'post_views' === $column ) {
 
 		echo videotuber_get_post_view();
 
@@ -50,22 +50,23 @@ add_filter( 'manage_posts_columns', 'videotuber_posts_column_views' );
 add_action( 'manage_posts_custom_column', 'videotuber_posts_custom_column_views' );
 
 function videotuber_post_time_ago_function() {
-	return sprintf( esc_html__( '%s ago', WPR_DOMAIN ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
+	/* translators: %s: How long ago */
+	return sprintf( esc_html__( '%s ago', 'WPR_DOMAIN' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
 }
 add_filter( 'the_time', 'videotuber_post_time_ago_function' );
 
 function videotuber_get_time_ago( $time ) {
-	 $time_difference = time() - $time;
+	$time_difference = time() - $time;
 
 	if ( $time_difference < 1 ) {
 		return 'less than 1 second ago'; }
 	$condition = array(
-		12 * 30 * 24 * 60 * 60 => __( 'year', WPR_DOMAIN ),
-		30 * 24 * 60 * 60      => __( 'month', WPR_DOMAIN ),
-		24 * 60 * 60           => __( 'day', WPR_DOMAIN ),
-		60 * 60                => __( 'hour', WPR_DOMAIN ),
-		60                     => __( 'minute', WPR_DOMAIN ),
-		1                      => __( 'second', WPR_DOMAIN ),
+		12 * 30 * 24 * 60 * 60 => esc_attr__( 'year', 'WPR_DOMAIN' ),
+		30 * 24 * 60 * 60      => esc_attr__( 'month', 'WPR_DOMAIN' ),
+		24 * 60 * 60           => esc_attr__( 'day', 'WPR_DOMAIN' ),
+		60 * 60                => esc_attr__( 'hour', 'WPR_DOMAIN' ),
+		60                     => esc_attr__( 'minute', 'WPR_DOMAIN' ),
+		1                      => esc_attr__( 'second', 'WPR_DOMAIN' ),
 	);
 
 	foreach ( $condition as $secs => $str ) {
@@ -78,13 +79,12 @@ function videotuber_get_time_ago( $time ) {
 	}
 }
 
-function videotuber_call_api($videotuber_max_results) {
+function videotuber_call_api( $videotuber_max_results ) {
 	$videotuber_api_settings = get_option( 'wpr_option' );
 	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
 	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
 
-
-	$url                     = add_query_arg(
+	$url = add_query_arg(
 		array(
 			'part'       => 'snippet',
 			'channelId'  => '' . $videotuber_channel_id . '',
@@ -102,12 +102,12 @@ function videotuber_call_api($videotuber_max_results) {
 
 function videotuber_call_api_by_keyword() {
 	header( 'Content-Type: application/json' );
-	$q = $_GET['q'];
-	$videotuber_api_settings = get_option( 'wpr_option' );
+	$q                        = $_GET['q'];
+	$videotuber_api_settings  = get_option( 'wpr_option' );
 	$videotuber_channel_image = videotuber_get_channel_image();
-	$videotuber_api_key      = $videotuber_api_settings['wpr_api_token'];
-	$videotuber_channel_id   = $videotuber_api_settings['wpr_api_client_id'];
-	$url                     = add_query_arg(
+	$videotuber_api_key       = $videotuber_api_settings['wpr_api_token'];
+	$videotuber_channel_id    = $videotuber_api_settings['wpr_api_client_id'];
+	$url                      = add_query_arg(
 		array(
 			'part'       => 'snippet',
 			'channelId'  => '' . $videotuber_channel_id . '',
@@ -115,22 +115,21 @@ function videotuber_call_api_by_keyword() {
 			'order'      => 'date',
 			'type'       => 'video',
 			'key'        => '' . $videotuber_api_key . '',
-			'q'			 => '' . $q . '',
+			'q'          => '' . $q . '',
 		),
 		'https://youtube.googleapis.com/youtube/v3/search'
 	);
 
-	$response = wp_remote_get( esc_url_raw( $url ) );
+	$response   = wp_remote_get( esc_url_raw( $url ) );
 	$video_list = json_decode( wp_remote_retrieve_body( $response ), true );
 	// Add key value api to video_list array for search js
-	$video_list['api'] = $videotuber_api_key;
+	$video_list['api']   = $videotuber_api_key;
 	$video_list['image'] = $videotuber_channel_image;
-	echo wp_json_encode($video_list);
+	echo wp_json_encode( $video_list );
 	wp_die();
 	// if ( ! empty( $video_list['items'] ) ) {
 	// 	foreach ( $video_list['items'] as $item ) {
-	
-	
+
 	// 		if ( isset( $item['id']['videoId'] ) ) {
 	// 			$url = add_query_arg(
 	// 				array(
@@ -162,10 +161,8 @@ function videotuber_call_api_by_keyword() {
 	// 			);
 	// 			echo wp_json_encode( $data );
 	// 			wp_die();
-				
-	// 		}}}
-			
 
+	// 		}}}
 
 }
 add_action( 'wp_ajax_videotuber_call_api_by_keyword', 'videotuber_call_api_by_keyword' );
@@ -317,20 +314,18 @@ function api_field_callback( $args ) {
 	// Get the value of the setting we've registered with register_setting()
 	$options = get_option( 'wpr_option' );
 	?>
-	
 <input
-		value="<?php echo $options[ $args['label_for'] ]; ?>"
-		id="<?php echo esc_attr( $args['label_for'] ); ?>"
-		data-custom="<?php echo esc_attr( $args['wpr_custom_data'] ); ?>"
-		name="wpr_option[<?php echo esc_attr( $args['label_for'] ); ?>]"
-		type="text">
+value="<?php echo $options[ $args['label_for'] ]; ?>"
+id="<?php echo esc_attr( $args['label_for'] ); ?>"
+data-custom="<?php echo esc_attr( $args['wpr_custom_data'] ); ?>"
+name="wpr_option[<?php echo esc_attr( $args['label_for'] ); ?>]"
+type="text">
 	<?php
 }
 function api_field_callback2( $args ) {
 	// Get the value of the setting we've registered with register_setting()
 	$options = get_option( 'wpr_option' );
 	?>
-	
 <input
 		value="<?php echo $options[ $args['label_for'] ]; ?>"
 		id="<?php echo esc_attr( $args['label_for'] ); ?>"
@@ -343,7 +338,6 @@ function product_field_callback( $args ) {
 	// Get the value of the setting we've registered with register_setting()
 	$options = get_option( 'wpr_option' );
 	?>
-	
 <input
 		value="<?php echo $options[ $args['label_for'] ]; ?>"
 		id="<?php echo esc_attr( $args['label_for'] ); ?>"

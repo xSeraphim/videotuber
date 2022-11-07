@@ -18,13 +18,11 @@ define( 'VIDEOTUBER_WIDGETS_PATH', untrailingslashit( plugin_dir_path( __FILE__ 
 
 function register_videotuber_youtube_widget( $widgets_manager ) {
 
-	require_once( __DIR__ . '/widgets/videotuber-widget-1.php' );
-	// require_once( __DIR__ . '/widgets/hello-world-widget-2.php' );
+	require_once( __DIR__ . '/widgets/class-elementor-videotuber-widget-1.php' );
 
 
-    // Register Class name defined in the widgets folder
-	$widgets_manager->register( new \Elementor_Hello_World_Widget_1() );
-	// $widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
+	// Register Class name defined in the widgets folder
+	$widgets_manager->register( new \Elementor_Videotuber_Widget_1() );
 
 }
 add_action( 'elementor/widgets/register', 'register_videotuber_youtube_widget' );

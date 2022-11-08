@@ -157,7 +157,7 @@ if ( ! empty( $video_list['items'] ) ) {
 				</h3>
 
 				<a href="<?php the_permalink(); ?>"><?php the_category(); ?></a>
-				<span><?php echo videotuber_get_post_view(); ?> • <?php the_time(); ?></span>
+				<span><?php echo gt_get_post_view(); ?> • <?php the_time(); ?></span>
 			</div>
 		</div>
 </div>

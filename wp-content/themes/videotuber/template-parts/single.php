@@ -1,12 +1,13 @@
 <?php
-get_header();
-videotuber_set_post_view();
+
+
 $author_id  = get_the_author_meta( 'ID' );
 $avatar_url = get_avatar_url( $author_id );
 
 if ( have_posts() ) {
 	while ( have_posts() ) {
-		the_post(); ?>
+		the_post();
+		?>
 <div class="videotuber__container">
 <div class="videotuber__post_banner">
 	<img class="videotuber__post_image" src="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -16,7 +17,7 @@ if ( have_posts() ) {
 	<div class="author">
 	<img src="<?php echo $avatar_url; ?>" alt="<?php the_author(); ?>" />
 	<span class="font-size-base">Posted By: <?php the_author(); ?> - </span>
-	<span class="font-size-base"><?php echo videotuber_get_post_view(); ?> • <?php the_time(); ?></span>
+	<span class="font-size-base"><?php echo gt_get_post_view(); ?> • <?php the_time(); ?></span>
 	</div>
 	</div>
 
@@ -24,7 +25,10 @@ if ( have_posts() ) {
 
 </div>
 <div class="videotuber__post_content">
-		<?php the_content(); ?>
+		<?php
+		the_content();
+		gt_set_post_view();
+		?>
 </div>
 
 </div>
@@ -34,9 +38,3 @@ if ( have_posts() ) {
 	}
 }
 ?>
-
-
-
-
-<?php
-get_footer();

@@ -392,3 +392,35 @@ function videotuber_get_channel_image() {
 	$json = json_decode( wp_remote_retrieve_body( wp_remote_get( esc_url_raw( $url ) ) ), true );
 	return $json['items'][0]['snippet']['thumbnails']['medium']['url'];
 }
+
+function videotuber_new_gravatar( $avatar_defaults ) {
+	$videotuber_channel_image     = videotuber_get_channel_image();
+	$myavatar                     = "$videotuber_channel_image";
+	$avatar_defaults[ $myavatar ] = 'Default Gravatar';
+	error_log( $myavatar );
+	return $avatar_defaults;
+}
+add_filter( 'avatar_defaults', 'videotuber_new_gravatar' );
+
+function gt_get_post_view() {
+	$count = get_post_meta( get_the_ID(), 'post_views_count', true );
+	return "$count views";
+}
+function gt_set_post_view() {
+	$key     = 'post_views_count';
+	$post_id = get_the_ID();
+	$count   = (int) get_post_meta( $post_id, $key, true );
+	$count++;
+	update_post_meta( $post_id, $key, $count );
+}
+function gt_posts_column_views( $columns ) {
+	$columns['post_views'] = 'Views';
+	return $columns;
+}
+function gt_posts_custom_column_views( $column ) {
+	if ( 'post_views' === $column ) {
+		echo gt_get_post_view();
+	}
+}
+add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
+add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );

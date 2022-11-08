@@ -1,8 +1,4 @@
 <?php
-get_header();
-
-
-
 if ( is_archive() || is_search() ) {
 	?>
 <div class="page__featured-videos_text">
@@ -92,6 +88,3 @@ if ( is_archive() || is_search() ) {
 }
 ?>
 </div>
-
-<?php
-get_footer();

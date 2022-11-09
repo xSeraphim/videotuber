@@ -57,3 +57,183 @@
     justify-content: center;
     flex-direction: column;
 }
+// video grid
+.grid-1 .videos__container{
+    display:grid;
+    grid-template-columns: auto;
+}
+.grid-2 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-5 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-6 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+.grid--tablet1 .videos__container{
+    display:grid;
+    grid-template-columns: auto;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet2 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr !important;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet3 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet4 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet5 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet6 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 767px) {
+.grid--mobile1 .videos__container{
+    display:grid;
+    grid-template-columns: auto !important; 
+}
+}
+@media screen and (max-width: 767px) {
+.grid--mobile2 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+}
+}
+@media screen and (max-width: 767px) {
+.grid--mobile3 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+}
+@media screen and (max-width: 767px) {
+.grid--mobile4 .videos__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+}
+//post grid
+.grid-1 .posts__container{
+    display:grid;
+    grid-template-columns: auto;
+}
+.grid-2 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-5 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-6 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+.grid--tablet1 .posts__container{
+    display:grid;
+    grid-template-columns: auto;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet2 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr !important;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet3 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet4 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet5 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 1024px) {
+.grid--tablet6 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 767px) {
+.grid--mobile1 .posts__container{
+    display:grid;
+    grid-template-columns: auto !important; 
+}
+}
+@media screen and (max-width: 767px) {
+.grid--mobile2 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+}
+}
+@media screen and (max-width: 767px) {
+.grid--mobile3 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+}
+@media screen and (max-width: 767px) {
+.grid--mobile4 .posts__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+}
+
+
+.videos__container,.posts__container{
+    column-gap:20px;
+    row-gap:20px;
+}

@@ -20,6 +20,9 @@
 		)
 	);
 	?>
+<div class="menu__search">
+<?php get_search_form( true ); ?>
+</div>
 <div class="videotuber_contact_links">
 	<a href="tel:"><i class="material-icons">phone_android</i></a>
 	<a href="mailto:"><i class="material-icons">mail</i></a>

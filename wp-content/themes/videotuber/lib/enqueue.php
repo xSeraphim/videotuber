@@ -30,6 +30,10 @@ function videtuber_add_styles() {
 		)
 	);
 
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+
 }
 add_action( 'wp_enqueue_scripts', 'videtuber_add_styles' );
 
@@ -43,5 +47,6 @@ function videotuber_admin_styles() {
 			'ajax_nonce' => wp_create_nonce( 'search-admin' ),
 		)
 	);
+
 }
 add_action( 'admin_enqueue_scripts', 'videotuber_admin_styles' );

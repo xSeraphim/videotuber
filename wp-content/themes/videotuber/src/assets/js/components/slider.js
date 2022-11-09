@@ -60,14 +60,14 @@ if(document.getElementById("js-sponsor-slider")) {
     //     }
     // });
     var galleryTop = new Swiper('#js-sponsor-slider', {
-        slidesPerView: 3,
+        slidesPerView: 2,
         grid: {
             rows: 2,
         },
         spaceBetween: 30,
         preloadImages: false,
         lazy: true,
-        loop: true,
+
         // navigation: {
         //     nextEl: '.swiper-button-next',
         //     prevEl: '.swiper-button-prev',

@@ -43,6 +43,54 @@ function videotuber_theme_options( $wp_customize ) {
 	);
 
 	$wp_customize->add_section(
+		'videotuber_donation_options',
+		array(
+			'title'       => __( 'VideoTuber Donation & Sponsor Settings', 'videotuber' ),
+			'priority'    => 100,
+			'capability'  => 'edit_theme_options',
+			'description' => __( 'Change donation & sponsor settings here.', 'videotuber' ),
+		)
+	);
+	$wp_customize->add_setting(
+		'patreon_donation_link',
+		array(
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+	$wp_customize->add_setting(
+		'paypal_donation_link',
+		array(
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'patreon_donation_link_control',
+			array(
+				'label'    => __( 'Patreon donation URL', 'videotuber' ),
+				'section'  => 'videotuber_donation_options',
+				'settings' => 'patreon_donation_link',
+				'priority' => 10,
+				'type'     => 'url',
+			)
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'paypal_donation_link_control',
+			array(
+				'label'    => __( 'Paypal donation URL', 'videotuber' ),
+				'section'  => 'videotuber_donation_options',
+				'settings' => 'paypal_donation_link',
+				'priority' => 10,
+				'type'     => 'url',
+			)
+		)
+	);
+	// Social options
+	$wp_customize->add_section(
 		'videotuber_social_options',
 		array(
 			'title'       => __( 'VideoTuber Social Link Settings', 'videotuber' ),

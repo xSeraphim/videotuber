@@ -19,6 +19,21 @@ if ( array_filter( $videotuber_valid_socials ) ) : ?>
 	</div>
 	<?php endif; ?>
 	<div class="videotuber-middle-footer">
+<?php
+$videotuber_donations       = array(
+	'patreon' => get_theme_mod( 'patreon_donation_link' ),
+	'paypal'  => get_theme_mod( 'paypal_donation_link' ),
+);
+$videotuber_valid_donations = array_filter( $videotuber_donations );
+if ( array_filter( $videotuber_valid_donations ) ) :
+	?>
+	<div class="videotuber-support">
+		<h3>Support me on:</h3>
+	<?php foreach ( $videotuber_valid_donations as $key => $value ) { ?>
+		<a class="videotuber-donation-link" href="<?php echo $value; ?>"><img src="<?php echo WPR_VIDEOTUBER_PATH . '/dist/assets/images/' . $key . '.png'; ?>" alt="<?php $key; ?>"></a>
+	<?php } ?>
+	</div>
+<?php endif; ?>
 	<?php
 	wp_nav_menu(
 		array(

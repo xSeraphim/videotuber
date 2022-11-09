@@ -5,7 +5,7 @@
 	align-items: center;
 	height: 70px;
 	padding: 15px;
-  position: fixed;
+  position: sticky;
   top: 0;
   background-color: white;
   z-index: 9;
@@ -56,7 +56,8 @@
           transform: translate(-280px,0);
           display: grid;
           align-items: center;
-          grid-template-columns: 1fr;
+          justify-items: center;
+          grid-template-columns: auto;
 
           .menu{
             text-align: center;
@@ -104,28 +105,66 @@
         }
       }
 
-      .header__search form {
-        border: 1px solid #ddd;
-        height: 35px;
-        margin: 0;
-        padding: 0;
-        display: flex;
+      .header__search{
+        display: none;
       }
-
-      .header__search input {
-        width: 500px;
-        padding: 10px;
-        margin: 0;
-        border-radius: 0;
-        border: none;
-        height: 100%;
+      @media screen and (min-width: 768px) {
+      .header__search{
+        display: block;
+        form {
+          border: 1px solid #ddd;
+          height: 35px;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        input {
+          width: 500px;
+          padding: 10px;
+          margin: 0;
+          border-radius: 0;
+          border: none;
+          height: 100%;
+        }
+        button {
+          padding: 0;
+          margin: 0;
+          height: 100%;
+          border: none;
+          border-radius: 0;
+        }
+        }
       }
-    
-      .header__search button {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        border: none;
-        border-radius: 0;
+      .menu__search{
+        display: none;
       }
+      @media screen and (max-width: 768px) {
+        .menu__search{
+          display: block;
+          max-width: 240px;;
+          form {
+            border: 1px solid #ddd;
+            height: 35px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          input {
+            width: 200px;
+            padding: 10px;
+            margin: 0;
+            border-radius: 0;
+            border: none;
+            height: 100%;
+          }
+          button {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            border: none;
+            border-radius: 0;
+          }
+          }
+        }
+      
   }

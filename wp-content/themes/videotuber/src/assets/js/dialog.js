@@ -30,6 +30,18 @@
         })
     });
 
+    $('.twitch__button').click(function(e){
+        e.preventDefault();
+        var id = $(this).data('id');
+        dialog.showModal();
+        $('#dialog .dialog__content').empty();
+        var html = `
+        <iframe src="https://player.twitch.tv/?video=${id}&parent=localhost&parent=127.0.0.1&parent=dev-videotuber.pantheonsite.io&parent=www.dev-videotuber.pantheonsite.io" frameborder="0" autoplay; allowfullscreen;></iframe>
+                    `;
+        $('#dialog .dialog__content').append(html);
+
+    });
+
     $('#dialog span').click(function(){
         $('#dialog .dialog__content').empty();
         dialog.close();

@@ -31,7 +31,19 @@
         padding-bottom: 60px;
         padding-top: 60px;
         width: 100%;
+        .videotuber-support{
+            display: grid;
+            justify-items: left;
 
+            img{
+                max-width: 150px;
+            }
+
+            h3{
+                color: var(--black);
+                font-size: 1.6rem;              
+            }
+        }
         li {
 
             a{

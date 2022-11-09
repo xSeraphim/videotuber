@@ -11,7 +11,7 @@ if ( have_posts() ) {
 <div class="videotuber__container">
 <div class="videotuber__post_banner">
 	<img class="videotuber__post_image" src="<?php echo get_the_post_thumbnail_url(); ?>">
-	<p class="font-size-md videotuber__categories"><?php echo get_the_category_list( ',' ); ?></p>
+	<p class="font-size-md videotuber__categories">Category: <?php echo get_the_category_list( ',' ); ?></p>
 	<h1 class="font-size-xxl"><?php the_title(); ?></h1>
 	<div class="post__details">
 	<div class="author">
@@ -30,7 +30,11 @@ if ( have_posts() ) {
 		gt_set_post_view();
 		?>
 </div>
-
+		<?php if ( comments_open() || get_comments_number() ) { ?>
+<div class="videotuber__post_comments">
+			<?php comments_template(); ?>
+</div>
+		<?php } ?>
 </div>
 
 

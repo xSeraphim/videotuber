@@ -122,6 +122,50 @@ function videotuber_call_api_by_keyword() {
 add_action( 'wp_ajax_videotuber_call_api_by_keyword', 'videotuber_call_api_by_keyword' );
 add_action( 'wp_ajax_nopriv_videotuber_call_api_by_keyword', 'videotuber_call_api_by_keyword' );
 
+function videotuber_get_twitch_id() {
+	$videotuber_api_settings     = get_option( 'wpr_option' );
+	$videotuber_twitch_username  = $videotuber_api_settings['wpr_twitch_login'];
+	$videotuber_twitch_token     = $videotuber_api_settings['wpr_twitch_acces_token'];
+	$videotuber_twitch_client_id = $videotuber_api_settings['wpr_twitch_client_id'];
+	$url                         = add_query_arg(
+		array(
+			// 'Authorization'       => 'Bearer' . $videotuber_twitch_token . '',
+			// 'Client-Id'  => '' . $videotuber_twitch_client_id . '',
+			'login' => $videotuber_twitch_username,
+		),
+		'https://api.twitch.tv/helix/users'
+	);
+	$args                        = array(
+		'headers' => array(
+			'Authorization' => 'Bearer ' . $videotuber_twitch_token . '',
+			'Client-Id'     => '' . $videotuber_twitch_client_id . '',
+		),
+	);
+	$response                    = wp_remote_get( esc_url_raw( $url ), $args );
+	return json_decode( wp_remote_retrieve_body( $response ), true );
+}
+
+function videotuber_get_twitch_videos( $videotuber_twitch_id ) {
+	$videotuber_api_settings     = get_option( 'wpr_option' );
+	$videotuber_twitch_token     = $videotuber_api_settings['wpr_twitch_acces_token'];
+	$videotuber_twitch_client_id = $videotuber_api_settings['wpr_twitch_client_id'];
+	$url                         = add_query_arg(
+		array(
+			// 'Authorization'       => 'Bearer' . $videotuber_twitch_token . '',
+			// 'Client-Id'  => '' . $videotuber_twitch_client_id . '',
+			'user_id' => '' . $videotuber_twitch_id . '',
+		),
+		'https://api.twitch.tv/helix/videos'
+	);
+	$args                        = array(
+		'headers' => array(
+			'Authorization' => 'Bearer ' . $videotuber_twitch_token . '',
+			'Client-Id'     => '' . $videotuber_twitch_client_id . '',
+		),
+	);
+	$response                    = wp_remote_get( esc_url_raw( $url ), $args );
+	return json_decode( wp_remote_retrieve_body( $response ), true );
+}
 
 function api_fields_callback( $args ) {
 	?>
@@ -132,7 +176,7 @@ function api_fields_callback( $args ) {
 // API SETTINGS
 function product_fields_callback( $args ) {
 	?>
-	<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Edit Product Discount SETTINGS.', 'wpr' ); ?></p>
+	<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Edit Twitch API SETTINGS.', 'wpr' ); ?></p>
 	<?php
 }
 
@@ -140,10 +184,10 @@ add_action(
 	'admin_init',
 	function() {
 		register_setting( 'wpr_academy', 'wpr_option' );
-		// API SECTION AND FIELDS
+		// YOUTUBE API SECTION AND FIELDS
 		add_settings_section(
 			'api_fields',
-			'API Credentials',
+			'Youtube API Credentials',
 			'api_fields_callback',
 			'wpr_academy'
 		);
@@ -183,35 +227,48 @@ add_action(
 				'wpr_custom_data' => 'custom',
 			)
 		);
-		// PRODUCT DISCOUNT SECTION AND FIELDS
+		// TWITCH SECTION AND FIELDS
 		add_settings_section(
-			'product_fields_discount',
-			'Product Discount Fields',
+			'twitch_api_fields',
+			'Twitch API Fields',
 			'product_fields_callback',
 			'wpr_academy'
 		);
 
 		add_settings_field(
-			'wpr_software_discount',
-			'Software Discount',
+			'wpr_twitch_login',
+			'Twitch Login name',
 			'product_field_callback',
 			'wpr_academy',
-			'product_fields_discount',
+			'twitch_api_fields',
 			array(
-				'label_for'       => 'wpr_software_discount',
+				'label_for'       => 'wpr_twitch_login',
 				'class'           => 'wpr_row',
 				'wpr_custom_data' => 'custom',
 			)
 		);
 
 		add_settings_field(
-			'wpr_software_discount_period',
-			'Discount Period',
+			'wpr_twitch_acces_token',
+			'Twitch Acces Token',
 			'product_field_callback',
 			'wpr_academy',
-			'product_fields_discount',
+			'twitch_api_fields',
 			array(
-				'label_for'       => 'wpr_software_discount_period',
+				'label_for'       => 'wpr_twitch_acces_token',
+				'class'           => 'wpr_row',
+				'wpr_custom_data' => 'custom',
+			)
+		);
+
+		add_settings_field(
+			'wpr_twitch_client_id',
+			'Twitch Client ID',
+			'product_field_callback',
+			'wpr_academy',
+			'twitch_api_fields',
+			array(
+				'label_for'       => 'wpr_twitch_client_id',
 				'class'           => 'wpr_row',
 				'wpr_custom_data' => 'custom',
 			)
@@ -223,7 +280,7 @@ add_action(
 	function() {
 		add_menu_page(
 			'API Settings',
-			'Youtube API Settings',
+			'Youtube and Twitch API Settings',
 			'manage_options',
 			'videotuber-api-settings',
 			'wpr_api_page_html',
@@ -297,7 +354,7 @@ function product_field_callback( $args ) {
 		id="<?php echo esc_attr( $args['label_for'] ); ?>"
 		data-custom="<?php echo esc_attr( $args['wpr_custom_data'] ); ?>"
 		name="wpr_option[<?php echo esc_attr( $args['label_for'] ); ?>]"
-		type="number">
+		type="text">
 	<?php
 }
 
